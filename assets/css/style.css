@@ -1374,6 +1374,10 @@ section {
     padding-right: 130px;
     background: rgba(245, 245, 245, 0.2);
     color: #728394;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .newsletter-form input:focus {
@@ -1393,6 +1397,18 @@ section {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.newsletter-form button:hover {
+    background: #fff;
+    border-radius: 50px;
+    min-width: 100%;
+    color: #4285F4;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
 #AboutusContent {
