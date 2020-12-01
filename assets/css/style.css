@@ -33,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--MatteBlack);
+    background: #d0d0d0;
     border-radius: 5px;
 }
 
@@ -1685,4 +1685,53 @@ section {
         margin-right: auto;
         margin-top: 30px;
     }
+}
+
+.Profile-Social-links {
+    margin-top: 30px;
+    z-index: 5;
+}
+
+.icon-box:hover {
+    color: white;
+}
+
+.icon-box:hover>h4>a {
+    color: white;
+}
+
+#Tirthak:hover {
+    background-color: var(--GoogleBlue);
+}
+
+#Sidd:hover {
+    background-color: var(--GoogleYellow);
+}
+
+#Bratin:hover {
+    background-color: var(--GoogleGreen);
+}
+
+#Margi:hover {
+    background-color: var(--GoogleYellow);
+}
+
+#Het:hover {
+    background-color: var(--GoogleBlue);
+}
+
+#Shivay:hover {
+    background-color: var(--GoogleRed);
+}
+
+#Jay:hover {
+    background-color: var(--GoogleGreen);
+}
+
+#Manav:hover {
+    background-color: var(--GoogleYellow);
+}
+
+#Sahil:hover {
+    background-color: var(--GoogleBlue);
 }
