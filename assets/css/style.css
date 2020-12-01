@@ -1451,8 +1451,8 @@ section {
     transition: all 0.5s ease 0s;
     border-radius: 40px;
     padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #accordionExample .card:hover {
