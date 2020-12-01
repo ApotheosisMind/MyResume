@@ -737,6 +737,7 @@ section {
 .services .icon-box {
     text-align: center;
     min-width: 300px;
+    min-height: 325px;
     padding: 70px 20px 80px 20px;
     transition: all ease-in-out 0.3s;
     background: #fff;
