@@ -1325,8 +1325,11 @@ section {
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .newsletter-text h3 {
@@ -1343,7 +1346,8 @@ section {
 
 @media (min-width: 768px) {
     .offset-md-2 {
-        margin-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
     }
     .col-md-8 {
         -webkit-box-flex: 0;
