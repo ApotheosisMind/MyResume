@@ -1323,6 +1323,8 @@ section {
     font-size: 2em;
     margin-bottom: 10px;
     margin-top: 50px;
+    color: #728394;
+    font-weight: bold;
 }
 
 .newsletter-text p {
@@ -1381,4 +1383,8 @@ section {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+}
+
+#AboutusContent {
+    margin: 20px auto;
 }
