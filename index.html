@@ -581,19 +581,28 @@
                         <div class="icon-box iconbox-blue">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 700 700">
+                                  
                                 <defs>
                                   <style>
                                     .cls-1 {
-                                      margin-top: 0px;
                                       fill: #f5f5f5;
+                                      -webkit-transition: all 0.7s ease 0s;
+                                      -moz-transition: all 0.7s ease 0s;
+                                      -o-transition: all 0.7s ease 0s;
+                                      transition: all 0.7s ease 0s;
                                     }
                                     .icon-box:hover .cls-1{
-                                      fill: #4885ef;
+                                      fill: #4285F4;
                                     }
                                   </style>
                                 </defs>
                                 <circle class="cls-1" cx="150" cy="150" r="150"/>
+                                <clipPath id="circleView">
+                                <circle class="cls-1" cx="150" cy="150" r="150"/>
+                              </clipPath>
+                                <image href="assets/img/tirthak-patel.png" style="z-index: 2;" height="300" clip-path="url(#circleView)">
                               </svg>
+
                             </div>
                             <h4><a href="">Tirthak Patel</a></h4>
                             <p>Lead Organizer</p>

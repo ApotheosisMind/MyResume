@@ -763,8 +763,9 @@ section {
 
 .services .icon-box .icon svg {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -35px;
+    left: -10px;
+    overflow: hidden;
 }
 
 .services .icon-box .icon svg path {
