@@ -46,7 +46,7 @@ h6 {
     border-radius: 50px;
     right: 15px;
     bottom: 15px;
-    background: #0563bb;
+    background: #4285F4;
     color: #fff;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
@@ -60,8 +60,8 @@ h6 {
 }
 
 .back-to-top:hover {
-    color: #fff;
-    background: #0678e3;
+    color: #4285F4;
+    background: #fff;
     transition: background 0.2s ease-in-out;
 }
 
@@ -1078,7 +1078,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-    background: #0563bb;
+    background: #4285F4;
     border: 0;
     padding: 10px 35px;
     color: #fff;
@@ -1087,7 +1087,9 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #0678e3;
+    background: #fff;
+    color: #4285F4;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1209,7 +1211,7 @@ section {
 #footer .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #0563bb;
+    background: #4285F4;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -1222,9 +1224,10 @@ section {
 }
 
 #footer .social-links a:hover {
-    background: #0678e3;
-    color: #fff;
+    background: #fff;
+    color: #4285F4;
     text-decoration: none;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
 #footer .copyright {
@@ -1394,4 +1397,27 @@ section {
 #AboutusContent {
     margin: 20px auto;
     margin-bottom: 50px;
+}
+
+.Footer-Btn {
+    background-color: #4285F4;
+    border-radius: 20px / 50%;
+    padding: 12px 25px;
+    color: #f7f8f9;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.Footer-Btn:hover {
+    background-color: #f7f8f9;
+    border-radius: 20px / 50%;
+    padding: 12px 25px;
+    color: #4285F4;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.footer .padding-span {
+    padding: 20px;
 }
