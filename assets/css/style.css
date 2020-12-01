@@ -1496,8 +1496,9 @@ section {
     width: 100%;
     font-size: 0.9em;
     padding: 16px;
-    border: #e5e5e5 solid 0.3px;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.05);
     border-radius: 50px;
+    border: none;
     padding-right: 130px;
     background: rgba(245, 245, 245, 0.2);
     color: var(--MatteBlack);
