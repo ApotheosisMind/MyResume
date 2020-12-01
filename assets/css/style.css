@@ -1459,6 +1459,10 @@ section {
     box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
+#accordionExample .card .card-header {
+    color: #728394;
+}
+
 .collapsible-link::before {
     content: '';
     width: 14px;
