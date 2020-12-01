@@ -42,6 +42,10 @@
 # General
 --------------------------------------------------------------*/
 
+*:focus {
+    outline: none;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
