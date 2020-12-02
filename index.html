@@ -224,7 +224,6 @@
                 <div class="section-title">
                     <h2>About</h2>
                     <div class="col-lg-12 newsletter-text">
-                        <h3>What is The Python Week?</h3>
                         <div class="col-lg-7 newsletter-text" id="AboutusContent">
                             <p>The Python Week is an event organized under DevLoop, which is an annual celebration of the Mehsana Developers Club. The event consists of 7 days of workshops that will solely focus on Python-related subjects. After the week-long
                                 sessions, we will host 48 hours of Virtual Hackathon.</p>
@@ -814,9 +813,11 @@
         function myFunction() {
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
+            var scrolled = parseInt((winScroll / height) * 100);
             document.getElementById("myBar").style.width = scrolled + "%";
-            console.log(scrolled);
+
+
+            //console.log(scrolled);
             //13.353968604908248
             //30.378067654211804
             //41.189476011496794
@@ -824,22 +825,22 @@
             //63.32080477559142
             //91.31107671899183
 
-            if (scrolled < 13.353968604908248) {
+            if (scrolled < 13) {
                 document.getElementById("myBar").style.background = "var(--GoogleBlue)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleBlue)";
-            } else if (scrolled < 30.378067654211804) {
+            } else if (scrolled < 30) {
                 document.getElementById("myBar").style.background = "var(--GoogleGreen)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleGreen)";
-            } else if (scrolled < 41.189476011496794) {
+            } else if (scrolled < 41) {
                 document.getElementById("myBar").style.background = "var(--GoogleRed)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleRed)";
-            } else if (scrolled < 47.09263762989166) {
+            } else if (scrolled < 47) {
                 document.getElementById("myBar").style.background = "var(--GoogleYellow)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleYellow)";
-            } else if (scrolled < 63.32080477559142) {
+            } else if (scrolled < 63) {
                 document.getElementById("myBar").style.background = "var(--GoogleBlue)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleBlue)";
-            } else if (scrolled < 91.31107671899183) {
+            } else if (scrolled < 91) {
                 document.getElementById("myBar").style.background = "var(--GoogleGreen)";
                 document.getElementById("back-to-top").style.background = "var(--GoogleGreen)";
             }

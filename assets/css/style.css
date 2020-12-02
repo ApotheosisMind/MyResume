@@ -556,6 +556,14 @@ section {
     padding: 0;
 }
 
+.about section-title {
+    width: fit-content;
+}
+
+#facts h2 {
+    margin-bottom: 50px;
+}
+
 .about .content ul li {
     padding-bottom: 10px;
 }
