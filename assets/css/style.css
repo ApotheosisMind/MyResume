@@ -1950,3 +1950,25 @@ section {
     border: none;
     overflow: hidden;
 }
+
+@media screen and (max-width: 425px) {
+    #Gallery-Section {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    #Gallery-Section {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    #Gallery-Section {
+        height: 750px;
+    }
+}
+
+#resume {
+    height: fit-content;
+}
