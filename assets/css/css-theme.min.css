@@ -171,13 +171,13 @@ sup {
 }
 
 a {
-    color: #335eea;
+    color: #575757;
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: #133bbd;
+    color: #4285F4;
     text-decoration: underline
 }
 
@@ -5311,6 +5311,7 @@ input[type=submit].btn-block {
     background-clip: border-box;
     border: 0 solid #f1f4f8;
     border-radius: 35px;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.08);
 }
 
 .card>hr {
@@ -18380,9 +18381,13 @@ body.compensate-for-scrollbar {
     justify-content: center;
     width: calc(1.6em + 1.625rem + 2px);
     height: calc(1.6em + 1.625rem + 2px);
-    background-color: #335eea;
+    background-color: #575757;
     box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .05);
-    color: #fff
+    color: #fff;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .flickity-button::after,
@@ -18392,7 +18397,7 @@ body.compensate-for-scrollbar {
 
 .flickity-button:focus,
 .flickity-button:hover {
-    background-color: #335eea;
+    background-color: #4285F4;
     box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .1)
 }
 
