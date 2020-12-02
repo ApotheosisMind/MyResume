@@ -368,11 +368,13 @@ h6 {
     position: relative;
 }
 
+
+/*
 @media (min-width: 992px) {
     #hero {
         padding-left: 160px;
     }
-}
+}*/
 
 #hero:before {
     content: "";
@@ -389,6 +391,9 @@ h6 {
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
     color: #45505b;
 }
 
@@ -396,6 +401,7 @@ h6 {
     color: #45505b;
     margin: 15px 0 0 0;
     font-size: 26px;
+    text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
@@ -405,7 +411,10 @@ h6 {
 }
 
 #hero .social-links {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
+    width: fit-content;
 }
 
 #hero .social-links a {
@@ -1380,8 +1389,8 @@ section {
     max-width: 500px;
     height: auto;
     display: block;
-    margin-left: -35px;
-    margin-top: -20px;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 992px) {
