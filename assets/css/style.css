@@ -1034,6 +1034,7 @@ section {
     background-size: cover;
     background-position: bottom 0px left 0px;
     background-repeat: no-repeat;
+    min-height: 686px;
 }
 
 .SendMsg {
@@ -1090,6 +1091,22 @@ section {
     padding-bottom: 8px;
 }
 
+.form-control {
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0 20px 0 rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+}
+
+.form-control:hover {
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
 .contact .php-email-form .validate {
     display: none;
     color: var(--GoogleRed);
@@ -1143,7 +1160,6 @@ section {
 .contact .php-email-form input,
 .contact .php-email-form textarea {
     border-radius: 25px;
-    box-shadow: none;
     font-size: 14px;
 }
 
