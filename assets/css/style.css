@@ -1653,7 +1653,7 @@ section {
     transition: all 0.3s ease 0s;
 }
 
-.collapsible-link::before {
+.collapsed::before {
     content: '';
     width: 14px;
     height: 2px;
@@ -1665,7 +1665,7 @@ section {
     transition: all 0.3s;
 }
 
-.collapsible-link::after {
+.collapsed::after {
     content: '';
     width: 2px;
     height: 14px;
@@ -1673,6 +1673,18 @@ section {
     position: absolute;
     top: calc(50% - 7px);
     right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+.d-block::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: #728394;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
     display: block;
     transition: all 0.3s;
 }
