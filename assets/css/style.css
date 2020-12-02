@@ -1972,3 +1972,39 @@ section {
 #resume {
     height: fit-content;
 }
+
+.Curved-Edge {
+    box-shadow: 0px 5px 35px 0px rgba(110, 123, 131, 0.05);
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    color: var(--MatteBlack);
+}
+
+.Curved-Edge:hover {
+    box-shadow: 0px 5px 15px 0px rgba(110, 123, 131, 0.05);
+}
+
+.Curved-Edge:hover:nth-child(1) {
+    color: white;
+    background-color: var(--GoogleBlue);
+}
+
+.Curved-Edge:hover:nth-child(2) {
+    color: white;
+    background-color: var(--GoogleRed);
+}
+
+.Curved-Edge:hover:nth-child(3) {
+    color: white;
+    background-color: var(--GoogleYellow);
+}
+
+.Curved-Edge:hover:nth-child(1) .About-Description {
+    color: white;
+    background-color: var(--GoogleBlue);
+}
