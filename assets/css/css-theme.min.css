@@ -46,7 +46,9 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+    background-color: transparent;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(22, 28, 45, 0)
@@ -5345,7 +5347,7 @@ input[type=submit].btn-block {
     -webkit-box-flex: 1;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 2rem
+    padding: 2rem;
 }
 
 .card-title {
@@ -15306,7 +15308,8 @@ a.card:hover {
 }
 
 .card-img-left {
-    border-radius: 35px 35px 0 0
+    border-radius: 35px 35px 0 0;
+    background-color: transparent;
 }
 
 @media (min-width:768px) {
@@ -18379,11 +18382,10 @@ body.compensate-for-scrollbar {
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    width: calc(1.6em + 1.625rem + 2px);
-    height: calc(1.6em + 1.625rem + 2px);
-    background-color: #575757;
+    width: 40px;
+    height: 40px;
     box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .05);
-    color: #fff;
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
@@ -18397,7 +18399,8 @@ body.compensate-for-scrollbar {
 
 .flickity-button:focus,
 .flickity-button:hover {
-    background-color: #4285F4;
+    background-color: #fff;
+    color: #575757;
     box-shadow: 0 .5rem 1.5rem rgba(22, 28, 45, .1)
 }
 
