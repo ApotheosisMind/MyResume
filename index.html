@@ -34,6 +34,9 @@
 
 <body>
 
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
     <!-- ======= Mobile nav toggle button ======= -->
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -801,6 +804,41 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+            console.log(scrolled);
+            //13.353968604908248
+            //30.378067654211804
+            //41.189476011496794
+            //47.09263762989166
+            //63.32080477559142
+            //91.31107671899183
+
+            if (scrolled < 13.353968604908248) {
+                document.getElementById("myBar").style.background = "var(--GoogleBlue)";
+            } else if (scrolled < 30.378067654211804) {
+                document.getElementById("myBar").style.background = "var(--GoogleGreen)";
+            } else if (scrolled < 41.189476011496794) {
+                document.getElementById("myBar").style.background = "var(--GoogleRed)";
+            } else if (scrolled < 47.09263762989166) {
+                document.getElementById("myBar").style.background = "var(--GoogleYellow)";
+            } else if (scrolled < 63.32080477559142) {
+                document.getElementById("myBar").style.background = "var(--GoogleBlue)";
+            } else if (scrolled < 91.31107671899183) {
+                document.getElementById("myBar").style.background = "var(--GoogleGreen)";
+            }
+        }
+    </script>
 
 </body>
 
