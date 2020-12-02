@@ -56,6 +56,18 @@ a:hover {
     text-decoration: none;
 }
 
+*:active {
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.col-3 {
+    padding-left: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -477,7 +489,7 @@ section {
 
 .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .section-title h2 {
@@ -1605,6 +1617,10 @@ section {
 
 .footer .padding-span {
     padding: 20px;
+}
+
+#accordionExample .card:nth-child(1) {
+    margin-top: 0px;
 }
 
 #accordionExample .card {
