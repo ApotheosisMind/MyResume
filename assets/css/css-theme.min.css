@@ -623,7 +623,7 @@ pre code {
     }
 }
 
-.row-Gallery {
+.row {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
@@ -5298,7 +5298,7 @@ input[type=submit].btn-block {
     color: #fff
 }
 
-.card-Gallery {
+.card {
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -5310,33 +5310,33 @@ input[type=submit].btn-block {
     background-color: #fff;
     background-clip: border-box;
     border: 0 solid #f1f4f8;
-    border-radius: .375rem
+    border-radius: 35px;
 }
 
-.card-Gallery>hr {
+.card>hr {
     margin-right: 0;
     margin-left: 0
 }
 
-.card-Gallery>.list-group {
+.card>.list-group {
     border-top: inherit;
     border-bottom: inherit
 }
 
-.card-Gallery>.list-group:first-child {
+.card>.list-group:first-child {
     border-top-width: 0;
     border-top-left-radius: calc(.375rem - 0px);
     border-top-right-radius: calc(.375rem - 0px)
 }
 
-.card-Gallery>.list-group:last-child {
+.card>.list-group:last-child {
     border-bottom-width: 0;
     border-bottom-right-radius: calc(.375rem - 0px);
     border-bottom-left-radius: calc(.375rem - 0px)
 }
 
-.card-Gallery>.card-header+.list-group,
-.card-Gallery>.list-group+.card-footer {
+.card>.card-header+.list-group,
+.card>.list-group+.card-footer {
     border-top: 0
 }
 
@@ -11718,7 +11718,7 @@ button.bg-white:hover {
     }
     .pt-md-12,
     .py-md-12 {
-        padding-top: 8rem!important
+        padding-top: 0!important
     }
     .pr-md-12,
     .px-md-12 {
@@ -15305,12 +15305,12 @@ a.card:hover {
 }
 
 .card-img-left {
-    border-radius: .375rem .375rem 0 0
+    border-radius: 35px 35px 0 0
 }
 
 @media (min-width:768px) {
     .card-img-left {
-        border-radius: .375rem 0 0 .375rem
+        border-radius: 35px 0px 0px 35px;
     }
 }
 
@@ -18410,7 +18410,8 @@ body.compensate-for-scrollbar {
 }
 
 .flickity-button.previous::before {
-    content: "\e910"
+    content: "←";
+    font-weight: 900;
 }
 
 .flickity-button.next {
@@ -18427,7 +18428,8 @@ body.compensate-for-scrollbar {
 }
 
 .flickity-button.next::before {
-    content: "\e912"
+    content: "→";
+    font-weight: 900;
 }
 
 .flickity-button-icon {
