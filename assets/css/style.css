@@ -92,24 +92,11 @@ h6 {
     bottom: 15px;
     background: var(--GoogleBlue);
     color: #fff;
-    transition: display 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
     z-index: 99999;
-    animation: changeColor 5s infinite;
-}
-
-@keyframes changeColor {
-    0% {
-        background-color: var(--GoogleBlue);
-    }
-    25% {
-        background-color: var(--GoogleGreen);
-    }
-    75% {
-        background-color: var(--GoogleRed);
-    }
-    100% {
-        background-color: var(--GoogleYellow);
-    }
 }
 
 .back-to-top i {
@@ -1934,7 +1921,7 @@ section {
     top: 0;
     z-index: 5;
     width: 100%;
-    height: 8px;
+    height: fit-content;
     background: transparent;
 }
 
