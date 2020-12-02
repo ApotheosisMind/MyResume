@@ -1677,6 +1677,30 @@ section {
     transition: all 0.3s;
 }
 
+.Android-View,
+.Tablet-View,
+.Standrad-View {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .Standrad-View {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 991px) {
+    .Tablet-View {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .Android-View {
+        display: flex;
+    }
+}
+
 .d-block::before {
     content: '';
     width: 14px;
