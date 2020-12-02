@@ -1033,7 +1033,7 @@ section {
     background-image: url("../img/BottomImage.svg");
     background-size: cover;
     background-position: bottom 0px left 0px;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
 }
 
 .SendMsg {
