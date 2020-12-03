@@ -1654,7 +1654,7 @@ section {
 .typed {
     color: var(--GoogleBlue);
     font-size: 1.2rem;
-    animation: ColorChanger 5s infinite;
+    animation: ColorChanger 4s infinite;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
@@ -1698,4 +1698,46 @@ section {
     #hero h1 {
         margin-bottom: -70px;
     }
+}
+
+#ApplyWithDev {
+    background-color: var(--GoogleBlue);
+    border-radius: 20px/50%;
+    padding: 10px 25px;
+    color: #f7f8f9;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    cursor: pointer;
+    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .09);
+}
+
+#ApplyWithDev:hover {
+    color: white;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .25);
+    background-color: var(--MatteBlack);
+}
+
+.SocialMedia {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 15px 20px;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    cursor: pointer;
+    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .09);
+}
+
+#Discord {
+    background-color: var(--GoogleGreen);
+    color: #f7f8f9;
+}
+
+#Youtube {
+    background-color: var(--GoogleRed);
+    color: #f7f8f9;
 }
