@@ -2016,7 +2016,6 @@ section {
 }
 
 .padding-content {
-    max-height: 368px;
     margin: auto;
 }
 
@@ -2026,4 +2025,8 @@ section {
 
 .Curved-Edge:hover #AboutDescription {
     box-shadow: 0px 5px 35px 0px rgba(110, 123, 131, 0.09);
+}
+
+.Curved-Edge p {
+    margin-right: 20px;
 }
