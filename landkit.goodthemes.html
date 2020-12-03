@@ -11,10 +11,451 @@
     <link rel="stylesheet" href="assets/css/dist-jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/css-theme.min.css">
 
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
+    <style>
+        @font-face {
+            font-family: boxicons;
+            font-weight: 400;
+            font-style: normal;
+            src: url(../fonts/boxicons.eot);
+            src: url(../fonts/boxicons.eot) format('embedded-opentype'), url(../fonts/boxicons.woff2) format('woff2'), url(../fonts/boxicons.woff) format('woff'), url(../fonts/boxicons.ttf) format('truetype'), url(../fonts/boxicons.svg?#boxicons) format('svg')
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+        
+        @-webkit-keyframes burst {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1
+            }
+            90% {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+                opacity: 0
+            }
+        }
+        
+        @keyframes burst {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 1
+            }
+            90% {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+                opacity: 0
+            }
+        }
+        
+        @-webkit-keyframes flashing {
+            0% {
+                opacity: 1
+            }
+            45% {
+                opacity: 0
+            }
+            90% {
+                opacity: 1
+            }
+        }
+        
+        @keyframes flashing {
+            0% {
+                opacity: 1
+            }
+            45% {
+                opacity: 0
+            }
+            90% {
+                opacity: 1
+            }
+        }
+        
+        @-webkit-keyframes fade-left {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateX(-20px);
+                transform: translateX(-20px);
+                opacity: 0
+            }
+        }
+        
+        @keyframes fade-left {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateX(-20px);
+                transform: translateX(-20px);
+                opacity: 0
+            }
+        }
+        
+        @-webkit-keyframes fade-right {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateX(20px);
+                transform: translateX(20px);
+                opacity: 0
+            }
+        }
+        
+        @keyframes fade-right {
+            0% {
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateX(20px);
+                transform: translateX(20px);
+                opacity: 0
+            }
+        }
+        
+        @-webkit-keyframes fade-up {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+                opacity: 0
+            }
+        }
+        
+        @keyframes fade-up {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+                opacity: 0
+            }
+        }
+        
+        @-webkit-keyframes fade-down {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+                opacity: 0
+            }
+        }
+        
+        @keyframes fade-down {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+                opacity: 1
+            }
+            75% {
+                -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+                opacity: 0
+            }
+        }
+        
+        @-webkit-keyframes tada {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg)
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg)
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg)
+            }
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+        
+        @keyframes tada {
+            from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg);
+                transform: scale3d(.95, .95, .95) rotate3d(0, 0, 1, -10deg)
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+                transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg)
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: rotate3d(0, 0, 1, -10deg);
+                transform: rotate3d(0, 0, 1, -10deg)
+            }
+            to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1)
+            }
+        }
+        /*! 
+* @package IcoFont 
+* @version 1.0.1 
+* @author IcoFont https://icofont.com 
+* @copyright Copyright (c) 2015 - 2018 IcoFont 
+* @license - https://icofont.com/license/
+*/
+        
+        @font-face {
+            font-family: IcoFont;
+            font-weight: 400;
+            font-style: Regular;
+            src: url(fonts/icofont.woff2) format("woff2"), url(fonts/icofont.woff) format("woff")
+        }
+        
+        [class*=" icofont-"],
+        [class^=icofont-] {
+            font-family: IcoFont!important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            line-height: 1;
+            -webkit-font-feature-settings: "liga";
+            -webkit-font-smoothing: antialiased
+        }
+        
+        .icofont-brand-icofont:before {
+            content: "\e8ec"
+        }
+        
+        .icofont-brand-lg:before {
+            content: "\e8fd"
+        }
+        
+        .icofont-id-card:before {
+            content: "\e970"
+        }
+        
+        .icofont-building-alt:before {
+            content: "\e98a"
+        }
+        
+        .icofont-block-down:before {
+            content: "\ea5f"
+        }
+        
+        .icofont-block-left:before {
+            content: "\ea60"
+        }
+        
+        .icofont-block-right:before {
+            content: "\ea61"
+        }
+        
+        .icofont-500px:before {
+            content: "\ed1c"
+        }
+        
+        .icofont-bootstrap:before {
+            content: "\ed24"
+        }
+        
+        .icofont-padding:before {
+            content: "\edb8"
+        }
+        
+        .icofont-font:before {
+            content: "\edef"
+        }
+        
+        .icofont-justify-center:before {
+            content: "\edf5"
+        }
+        
+        .icofont-justify-left:before {
+            content: "\edf6"
+        }
+        
+        .icofont-justify-right:before {
+            content: "\edf7"
+        }
+        
+        .icofont-text-height:before {
+            content: "\ee07"
+        }
+        
+        .icofont-text-width:before {
+            content: "\ee08"
+        }
+        
+        .icofont-building:before {
+            content: "\eec8"
+        }
+        
+        .icofont-card:before {
+            content: "\eed0"
+        }
+        
+        .icofont-data:before {
+            content: "\eefb"
+        }
+        
+        .icofont-id:before {
+            content: "\ef4a"
+        }
+        
+        .icofont-image:before {
+            content: "\ef4b"
+        }
+        
+        .icofont-invisible:before {
+            content: "\ef53"
+        }
+        
+        .icofont-link-alt:before {
+            content: "\ef70"
+        }
+        
+        .icofont-link:before {
+            content: "\ef71"
+        }
+        
+        .icofont-tags:before {
+            content: "\f005"
+        }
+        
+        .icofont-sm {
+            font-size: .75em
+        }
+        
+        .icofont-md {
+            font-size: 1.25em
+        }
+        
+        .icofont-lg {
+            font-size: 1.5em
+        }
+        
+        @-webkit-keyframes icofont-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes icofont-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+        /*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+        
+        @font-face {
+            font-family: FontAwesome;
+            src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+            src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+            font-weight: 400;
+            font-style: normal
+        }
+        
+        @-webkit-keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+        
+        @keyframes fa-spin {
+            0% {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg)
+            }
+        }
+    </style>
     <title>Landkit</title>
 
 
