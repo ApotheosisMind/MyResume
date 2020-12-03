@@ -1743,17 +1743,22 @@ section {
     background-color: var(--GoogleGreen);
 }
 
-#Discord img {
+#Discord svg {
     height: 25px;
     margin-top: -2px;
 }
 
-#Youtube img {
+#Youtube svg {
     margin-top: -3px;
     height: 21px;
 }
 
-#Youtube @media screen and (max-width: 575px) {
+#Discord:hover,
+#Youtube:hover {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 575px) {
     #Youtube {
         margin-top: 50px;
     }
