@@ -1790,12 +1790,3 @@ section {
         margin-left: -100px;
     }
 }
-
-@media screen and (max-width: 992px) {
-    #YoutubeToolTip {
-        display: none;
-    }
-    #DiscordToolTip {
-        display: none;
-    }
-}
