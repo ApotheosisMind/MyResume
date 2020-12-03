@@ -1515,11 +1515,11 @@ section {
 }
 
 #Margi:hover {
-    background-color: var(--GoogleYellow)
+    background-color: var(--GoogleBlue)
 }
 
 #Het:hover {
-    background-color: var(--GoogleBlue)
+    background-color: var(--GoogleYellow)
 }
 
 #Shivay:hover {
@@ -1881,5 +1881,4 @@ section {
     #mouse-circle1 {
         display: none;
     }
-}   }
 }
