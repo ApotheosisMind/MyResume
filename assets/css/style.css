@@ -1701,16 +1701,16 @@ section {
 }
 
 #ApplyWithDev {
-    background-color: var(--GoogleBlue);
+    background-color: White;
     border-radius: 20px/50%;
     padding: 10px 25px;
-    color: #f7f8f9;
+    color: var(--GoogleBlue);
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
     cursor: pointer;
-    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .09);
+    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .25);
 }
 
 #ApplyWithDev:hover {
@@ -1727,21 +1727,11 @@ section {
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
     cursor: pointer;
-    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .09);
-    color: #f7f8f9;
+    background-color: #fff;
     width: 40px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px 10px;
-}
-
-#Youtube {
-    background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
-}
-
-#Discord {
-    background-color: #fff;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
 
