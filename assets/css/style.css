@@ -6,21 +6,21 @@
     --MatteBlack: #728394
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 10px;
     background: 0 0
 }
 
-::-webkit-scrollbar-track {
+ ::-webkit-scrollbar-track {
     background: 0 0
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: #d0d0d0;
     border-radius: 5px
 }
 
-:focus {
+ :focus {
     outline: 0
 }
 
@@ -1719,25 +1719,42 @@ section {
     background-color: var(--MatteBlack);
 }
 
-.SocialMedia {
+#Youtube,
+#Discord {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 15px 20px;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
     cursor: pointer;
     box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .09);
-}
-
-#Discord {
-    background-color: var(--GoogleGreen);
     color: #f7f8f9;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 10px;
 }
 
 #Youtube {
     background-color: var(--GoogleRed);
-    color: #f7f8f9;
+}
+
+#Discord {
+    background-color: var(--GoogleGreen);
+}
+
+#Discord img {
+    height: 25px;
+    margin-top: -2px;
+}
+
+#Youtube img {
+    margin-top: -3px;
+    height: 21px;
+}
+
+#Youtube @media screen and (max-width: 575px) {
+    #Youtube {
+        margin-top: 50px;
+    }
 }
