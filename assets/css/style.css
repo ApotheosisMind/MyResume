@@ -1613,6 +1613,10 @@ section {
     background-color: var(--GoogleBlue)
 }
 
+.Curved-Edge:hover:nth-child(1) .st0 {
+    fill: white;
+}
+
 .Curved-Edge:hover:nth-child(2) {
     color: #fff;
     background-color: var(--GoogleRed)
