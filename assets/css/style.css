@@ -297,6 +297,12 @@ h6 {
     position: relative
 }
 
+@media screen and (min-width: 490px) {
+    #hero {
+        height: 110vh;
+    }
+}
+
 #hero:before {
     content: "";
     background: rgba(255, 255, 255, 0);
@@ -1772,7 +1778,11 @@ section {
 
 @media screen and (max-width: 575px) {
     #AddTop {
-        margin-top: 50px;
+        margin-top: -25px;
+        margin-left: 100px;
+    }
+    #AddLeft {
+        margin-left: -50px;
     }
 }
 
