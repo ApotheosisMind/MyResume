@@ -226,10 +226,99 @@
                 <div class="section-title">
                     <h2>About</h2>
                     <div class="col-md-12">
+
+                        <script>
+                            var clk = 1,
+                                hvr = 1;
+
+
+                            function ChangeColor1() {
+                                document.getElementById("AboutDescription").style.transition = "all 0.5s";
+                                if (clk == hvr) {
+                                    if (clk == 1) {
+                                        document.getElementById("AboutDescription").style.background = "#4285F4";
+                                        document.getElementById("AboutDescription").style.color = "#fff";
+                                    } else if (clk == 2) {
+                                        document.getElementById("AboutDescription").style.background = "#EA4335";
+                                        document.getElementById("AboutDescription").style.color = "#fff";
+                                    } else if (clk == 3) {
+                                        document.getElementById("AboutDescription").style.background = "#FBBC04";
+                                        document.getElementById("AboutDescription").style.color = "#fff";
+                                    }
+                                    document.getElementById("AboutDescription").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.2)";
+                                }
+
+                            }
+
+                            function RestoreColor1() {
+                                document.getElementById("AboutDescription").style.transition = "all 0.5s";
+                                document.getElementById("AboutDescription").style.background = "#fff";
+                                document.getElementById("AboutDescription").style.color = "#728394";
+                                document.getElementById("AboutDescription").style.boxShadow = "0px 5px 15px 0px rgba(110, 123, 131, 0.05)";
+                                if (clk == 1) {
+                                    document.getElementById("clk2Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                    document.getElementById("clk3Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                } else if (clk == 2) {
+                                    document.getElementById("clk1Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                    document.getElementById("clk3Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                } else if (clk == 3) {
+                                    document.getElementById("clk1Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                    document.getElementById("clk2Btn").style.boxShadow = "0px 5px 35px 0px rgba(110, 123, 131, 0.05)";
+                                }
+                            }
+
+                            function SetContent1() {
+                                document.getElementById("AboutDescription").style.marginTop = "50px";
+                                document.getElementById("AddHeadingHere").innerHTML = "The Python Week";
+                                document.getElementById("AddContentHere").innerHTML = "The Python Week is an event organized under DevLoop, which is an annual celebration of the Mehsana Developers Club. The event consists of 7 days of workshops that will solely focus on Python-related subjects. After the week-long sessions, we will host 48 hours of Virtual Hackathon.";
+                                clk = 1;
+                                document.getElementById("clk1Btn").style.boxShadow = "0px 5px 15px 0px rgba(110, 123, 131, 0.25)";
+                                RestoreColor1();
+                                ChangeColor1();
+                            }
+
+                            function SetContent2() {
+                                document.getElementById("AboutDescription").style.marginTop = "70px";
+                                document.getElementById("AddHeadingHere").innerHTML = "About Workshops";
+                                document.getElementById("AddContentHere").innerHTML = "The Python Week will have 7 days of workshops completely dedicated to Python and related technologies. All the sessions will be delivered by some of the amazing community speakers and experts from their respective fields. You will get to see the demo in each session.";
+                                clk = 2;
+                                document.getElementById("clk2Btn").style.boxShadow = "0px 5px 15px 0px rgba(110, 123, 131, 0.25)";
+                                RestoreColor1();
+                                ChangeColor1();
+                            }
+
+                            function SetContent3() {
+                                document.getElementById("AboutDescription").style.marginTop = "50px";
+                                document.getElementById("AddHeadingHere").innerHTML = "About Hackathon";
+                                document.getElementById("AddContentHere").innerHTML = "The Python Week will have 48 hours of hackathon post 7 days of workshops. Hackathon will be focused on solutions built with the help of at least one Python element. Enjoy your 48 hours of efforts with lots of mini events involved in between. Showcase your work and earn prizes.";
+                                clk = 3;
+                                document.getElementById("clk3Btn").style.boxShadow = "0px 5px 15px 0px rgba(110, 123, 131, 0.25)";
+                                RestoreColor1();
+                                ChangeColor1();
+                            }
+
+                            function onOver1() {
+                                hvr = 1;
+                            }
+
+                            function onOver2() {
+                                hvr = 2;
+                            }
+
+                            function onOver3() {
+                                hvr = 3;
+                            }
+
+                            function SetStaring() {
+                                document.getElementById("AboutDescription").style.marginTop = "50px";
+                                document.getElementById("clk1Btn").style.boxShadow = "0px 5px 15px 0px rgba(110, 123, 131, 0.25)";
+                            }
+                            setTimeout(SetStaring, 1000);
+                        </script>
                         <div class="row">
                             <div class="col-md-6">
 
-                                <div class="row card Curved-Edge border-0">
+                                <div class="row card Curved-Edge border-0" onmouseover="onOver1(); ChangeColor1()" onmouseout="RestoreColor1()" onclick="SetContent1()" id="clk1Btn">
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
@@ -251,7 +340,7 @@
                                     </div>
                                 </div>
 
-                                <div class="row card Curved-Edge border-0">
+                                <div class="row card Curved-Edge border-0" onmouseover="onOver2(); ChangeColor1()" onmouseout="RestoreColor1()" onclick="SetContent2()" id="clk2Btn">
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
@@ -275,7 +364,7 @@
 
 
 
-                                <div class="row card Curved-Edge border-0">
+                                <div class="row card Curved-Edge border-0" onmouseover="onOver3(); ChangeColor1()" onmouseout="RestoreColor1()" onclick="SetContent3()" id="clk3Btn">
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
@@ -300,17 +389,15 @@
 
                             </div>
 
-                            <div class="col-md-6 ">
-                                <div class="row align-items-center ">
-                                    <div class="col align-self-center card Curved-Edge border-0 About-Description ">
+                            <div class="col-md-6">
+                                <div class="row padding-content">
+                                    <div class="col border-0 About-Description" id="AboutDescription">
                                         <div class="col">
-                                            <h5 class="text-center">
+                                            <h5 class="text-center" id="AddHeadingHere">
                                                 The Python Week
                                             </h5>
-                                            <p class="text-center Add-Content-Here">
-                                                The Python Week is an event organized under DevLoop, which is an annual celebration of the Mehsana Developers Club. The event consists of 7 days of workshops that will solely focus on Python-related subjects. After the week-long sessions, we will host
-                                                48 hours of Virtual Hackathon.
-
+                                            <p class="text-center  pt-3" id="AddContentHere">The Python Week is an event organized under DevLoop, which is an annual celebration of the Mehsana Developers Club. The event consists of 7 days of workshops that will solely focus on Python-related subjects.
+                                                After the week-long sessions, we will host 48 hours of Virtual Hackathon.
                                             </p>
                                         </div>
                                     </div>
@@ -355,14 +442,15 @@
 
                             <!-- Accordion item 1 -->
                             <div class="card">
-                                <div id="headingOne" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2 CustomBorder"><span class="Android-View">What is The Python<br>Week?</span>
+                                <div id="headingOne" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsed text-uppercase collapsible-link
+                                    py-2 CustomBorder"><span class="Android-View">What is The Python<br>Week?</span>
                                             <span
                                                 class="Standrad-View">What is The Python Week?</span><span class="Tablet-View">What is The Python Week?</span></a>
                                     </h6>
                                 </div>
                                 <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">
                                             The Python Week is an event organized under DevLoop, which is an annual celebration of the Mehsana Developers Club. The event consists of 7 days of workshops that will solely focus on Python-related subjects. After the week-long sessions, we will host
                                             48 hours of Virtual Hackathon.</p>
@@ -374,12 +462,13 @@
 
                             <!-- Accordion item 2 -->
                             <div class="card">
-                                <div id="headingTwo" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2"><span class="Android-View">When & Where is The<br>Python Week?</span><span class="Standrad-View">When & Where is The Python Week?</span><span class="Tablet-View">When & Where is The Python<br>Week?</span>
+                                <div id="headingTwo" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-uppercase collapsible-link
+                                    py-2"><span class="Android-View">When & Where is The<br>Python Week?</span><span class="Standrad-View">When & Where is The Python Week?</span><span class="Tablet-View">When & Where is The Python<br>Week?</span>
                                   </a></h6>
                                 </div>
                                 <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">The Python Week is a virtual event with 7 days of workshops & 48-hours hackathon, all of this starting from 1st January till 10th January, 2021.</p>
                                     </div>
                                 </div>
@@ -387,12 +476,13 @@
 
                             <!-- Accordion item 3 -->
                             <div class="card">
-                                <div id="headingThree" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2">Do I need experience?
+                                <div id="headingThree" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-uppercase
+                                    collapsible-link py-2">Do I need experience?
                                   </a></h6>
                                 </div>
                                 <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">No experience is necessary. We will have plenty of mentors and resources available, along with several workshops targeted for beginners. Come learn and experience your first hackathon at The Python Week!</p>
                                     </div>
                                 </div>
@@ -400,12 +490,14 @@
 
                             <!-- Accordion item 4 -->
                             <div class="card">
-                                <div id="headingFour" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2"><span class="Android-View">Who will own the IP<br>(Intellectual Property)<br>Rights to the project<br>that I have built?</span><span class="Standrad-View">Who will own the IP (Intellectual Property) Rights to the<br>project that I have built?</span><span class="Tablet-View">Who will own the IP (Intellectual<br>Property) Rights to the project<br>that I have built?</span>
+                                <div id="headingFour" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" class="d-block position-relative collapsed text-uppercase collapsible-link
+                                    py-2"><span class="Android-View">Who will own the IP<br>(Intellectual Property)<br>Rights to the project<br>that I have built?</span><span class="Standrad-View
+                                   ">Who will own the IP (Intellectual Property) Rights to the<br>project that I have built?</span><span class="Tablet-View">Who will own the IP (Intellectual<br>Property) Rights to the project<br>that I have built?</span>
                                   </a></h6>
                                 </div>
                                 <div id="collapseFour" aria-labelledby="headingFour" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">The developer/developers of the web/mobile application will have all rights and own the IP of the project. However, all code needs to be in public domain (open source) so that it can be evaluated by the judges.
                                         </p>
                                     </div>
@@ -414,12 +506,13 @@
 
                             <!-- Accordion item 5 -->
                             <div class="card">
-                                <div id="headingFive" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2">Does it cost anything?
+                                <div id="headingFive" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" class="d-block position-relative collapsed text-uppercase collapsible-link
+                                    py-2">Does it cost anything?
                                   </a></h6>
                                 </div>
                                 <div id="collapseFive" aria-labelledby="headingFive" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">The Python Week is 100% free. You don’t have to spend anything!</p>
                                     </div>
                                 </div>
@@ -427,12 +520,13 @@
 
                             <!-- Accordion item 6 -->
                             <div class="card">
-                                <div id="headingSix" class="card-header   border-0">
-                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="d-block position-relative collapsed  text-uppercase collapsible-link py-2">Can we form teams?
+                                <div id="headingSix" class="card-header border-0">
+                                    <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" class="d-block position-relative collapsed text-uppercase collapsible-link
+                                    py-2">Can we form teams?
                                   </a></h6>
                                 </div>
                                 <div id="collapseSix" aria-labelledby="headingSix" data-parent="#accordionExample" class="collapse">
-                                    <div class="card-body ">
+                                    <div class="card-body">
                                         <p class="font-weight-light m-0">Of course you can! We encourage people to work in teams of up to 4 people. You may opt-in to team formation through our Discord Server which will match you with an ideal team. You can work alone as well.</p>
                                     </div>
                                 </div>
