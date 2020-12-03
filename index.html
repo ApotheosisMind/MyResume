@@ -102,9 +102,11 @@
 
 
 
+                <span class="tooltiptext" id="DiscordToolTip" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">Join Us On Discord</span>
+
 
                 <div class="col-sm-1" id="AddLeft" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">
-                    <a id="Discord" href="https://discord.gg/9RhzMXvF" target="_blank">
+                    <a class="HoverToolTip" id="Discord" href="https://discord.gg/9RhzMXvF" target="_blank" onmouseover="ChangeDiscordToolTipClor()" onmouseout="ResetDiscordToolTipClor()">
                         <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 414"><defs>
                             <style>
                                 .cls-1212{ 
@@ -119,7 +121,7 @@
                     </a>
                 </div>
                 <div class="col-sm-1" id="AddTop" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">
-                    <a id="Youtube" target="_blank">
+                    <a id="Youtube" target="_blank" onmouseover="ChangeYoutubeToolTipClor()" onmouseout="ResetYoutubeToolTipClor()">
 
                         <svg version="1.1" id="Capa_12121" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 6.9" style="enable-background:new 0 0 10 6.9;" xml:space="preserve">
                         <defs>
@@ -143,7 +145,31 @@
 
                     </a>
                 </div>
-                <span class="tooltiptext">Subsribe To Our Channel</span>
+                <span class="tooltiptext" id="YoutubeToolTip" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">Watch Us On YouTube</span>
+
+                <script>
+                    function ChangeYoutubeToolTipClor() {
+                        document.getElementById("YoutubeToolTip").style.transition = "all 0.5s";
+                        document.getElementById("YoutubeToolTip").style.background = "#EA4335";
+                        document.getElementById("YoutubeToolTip").style.color = "White";
+                    }
+
+                    function ResetYoutubeToolTipClor() {
+                        document.getElementById("YoutubeToolTip").style.background = "white";
+                        document.getElementById("YoutubeToolTip").style.color = "#EA4335";
+                    }
+
+                    function ChangeDiscordToolTipClor() {
+                        document.getElementById("DiscordToolTip").style.transition = "all 0.5s";
+                        document.getElementById("DiscordToolTip").style.background = "#34A853";
+                        document.getElementById("DiscordToolTip").style.color = "White";
+                    }
+
+                    function ResetDiscordToolTipClor() {
+                        document.getElementById("DiscordToolTip").style.background = "white";
+                        document.getElementById("DiscordToolTip").style.color = "#34A853";
+                    }
+                </script>
 
 
             </div>

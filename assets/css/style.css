@@ -1795,34 +1795,44 @@ section {
     visibility: visible;
     width: 220px;
     background-color: white;
-    color: var(--GoogleRed);
     text-align: center;
     border-radius: 15px / 50%;
     padding: 5px 5px;
     /* Position the tooltip */
     position: absolute;
-    left: 57%;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
     z-index: 1;
+}
+
+#YoutubeToolTip {
+    color: var(--GoogleRed);
+    left: 57%;
+}
+
+#DiscordToolTip {
+    color: var(--GoogleGreen);
+    right: 57%;
 }
 
 .tooltiptext::after {
     content: " ";
     position: absolute;
     top: 50%;
-    right: 100%;
     /* To the left of the tooltip */
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
+}
+
+#YoutubeToolTip::after {
+    right: 100%;
     border-color: transparent white transparent transparent;
 }
 
-#Youtube:hover .tooltiptext {
-    color: white;
-    background-color: var(--GoogleRed);
-    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
+#DiscordToolTip::after {
+    left: 100%;
+    border-color: transparent transparent transparent white;
 }
 
 @media screen and (max-width: 992px) {
