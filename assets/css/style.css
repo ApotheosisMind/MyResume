@@ -614,7 +614,7 @@ section {
 
 .services .icon-box {
     text-align: center;
-    min-width: 300px;
+    min-width: 275px;
     min-height: 325px;
     padding: 70px 20px 10px 20px;
     transition: all ease-in-out .3s;
@@ -1685,12 +1685,21 @@ section {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 405px) {
     .typed {
         font-size: 1rem;
     }
-    .SmallText {
+    #SmallText {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    .typed {
+        font-size: 0.95rem;
+    }
+    #SmallText {
+        font-size: 0.92rem;
     }
 }
 
