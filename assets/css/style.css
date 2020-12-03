@@ -1654,6 +1654,29 @@ section {
 .typed {
     color: var(--GoogleBlue);
     font-size: 1.2rem;
+    animation: ColorChanger 5s infinite;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+@keyframes ColorChanger {
+    0% {
+        color: var(--GoogleBlue);
+    }
+    25% {
+        color: var(--GoogleGreen);
+    }
+    50% {
+        color: var(--GoogleRed);
+    }
+    75% {
+        color: var(--GoogleYellow);
+    }
+    100% {
+        color: var(--GoogleBlue);
+    }
 }
 
 @media screen and (max-width: 375px) {
