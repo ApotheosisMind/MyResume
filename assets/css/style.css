@@ -1716,7 +1716,7 @@ section {
 #ApplyWithDev:hover {
     color: white;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .25);
-    background-color: var(--MatteBlack);
+    background-color: var(--GoogleYellow);
 }
 
 #Youtube,
@@ -1736,11 +1736,13 @@ section {
 }
 
 #Youtube {
-    background-color: var(--GoogleRed);
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
 
 #Discord {
-    background-color: var(--GoogleGreen);
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
 
 #Discord svg {
@@ -1753,10 +1755,13 @@ section {
     height: 21px;
 }
 
-#Discord:hover,
+#Discord:hover {
+    background-color: var(--GoogleGreen);
+}
+
 #Youtube:hover {
-    background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
+    background-color: var(--GoogleRed);
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .5);
 }
 
 @media screen and (max-width: 575px) {
