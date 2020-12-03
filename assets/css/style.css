@@ -1760,7 +1760,16 @@ section {
 }
 
 @media screen and (max-width: 575px) {
-    #Youtube {
+    #AddTop {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    #Youtube {
+        margin-left: 20px;
+    }
+    #AddLeft {
+        margin-left: -40px;
     }
 }
