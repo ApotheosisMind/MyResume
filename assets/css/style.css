@@ -1434,6 +1434,14 @@ section {
     margin: 5px auto;
 }
 
+@media screen and (max-width: 992px) {
+    .countdown-cont {
+        color: var(--MatteBlack);
+        padding-top: 10px;
+        margin: 5px auto;
+    }
+}
+
 .number-wrap {
     font-weight: 900;
 }
@@ -2029,4 +2037,16 @@ section {
 
 .Curved-Edge p {
     margin-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .widthMin {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .marginEqual {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
