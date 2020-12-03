@@ -1850,3 +1850,36 @@ section {
         visibility: hidden;
     }
 }
+
+#mouse-circle {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: -17px 0px 0px -17px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    pointer-events: none !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+    z-index: 15;
+}
+
+#mouse-circle1 {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0px 0px -4px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--MatteBlack);
+    pointer-events: none !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+    z-index: 15;
+}
+
+@media screen and (max-width: 992px) {
+    #mouse-circle,
+    #mouse-circle1 {
+        display: none;
+    }
+}   }
+}

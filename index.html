@@ -32,6 +32,51 @@
 </head>
 
 <body onbeforeunload="window.scrollTo(0, 0);">
+    <div id="mouse-circle"></div>
+    <div id="mouse-circle1"></div>
+    <script>
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            let mousePosX = 0,
+                mousePosY = 0,
+                mouseCircle = document.getElementById("mouse-circle");
+            mouseCircle1 = document.getElementById("mouse-circle1");
+
+            document.onmousemove = (e) => {
+                mousePosX = e.pageX;
+                mousePosY = e.pageY;
+            };
+
+            let delay = 106,
+                delay1 = 1,
+                revisedMousePosX = 0,
+                revisedMousePosY = 0;
+
+            function delayMouseFollow() {
+                requestAnimationFrame(delayMouseFollow);
+
+                revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+                revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+                mouseCircle.style.top = revisedMousePosY + "px";
+                mouseCircle.style.left = revisedMousePosX + "px";
+            }
+            delayMouseFollow();
+
+
+            function delay1MouseFollow() {
+                requestAnimationFrame(delay1MouseFollow);
+
+                revisedMousePosX += (mousePosX - revisedMousePosX) / delay1;
+                revisedMousePosY += (mousePosY - revisedMousePosY) / delay1;
+
+                mouseCircle1.style.top = revisedMousePosY + "px";
+                mouseCircle1.style.left = revisedMousePosX + "px";
+            }
+            delay1MouseFollow();
+        }
+    </script>
+
+
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
     </div>
@@ -805,40 +850,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="icon-box iconbox-yellow" id="Margi">
-                            <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                  
-                                <defs>
-                                  <style>
-                                    #margiBG {
-                                      fill: #FBBC04;
-                                      -webkit-transition: all 0.7s ease 0s;
-                                      -moz-transition: all 0.7s ease 0s;
-                                      -o-transition: all 0.7s ease 0s;
-                                      transition: all 0.7s ease 0s;
-                                    }
-                                    .icon-box:hover #margiBG{
-                                      fill: #f5f5f5;
-                                    }
-                                  </style>
-                                </defs>
-                                <circle class="cls-1" id="margiBG" cx="150" cy="150" r="150"/>
-                                <clipPath id="circleView">
-                                <circle class="cls-1" cx="150" cy="150" r="150"/>
-                              </clipPath>
-                                <image href="assets/img/margi.png" style="z-index: 2;" height="300" clip-path="url(#circleView)">
-                              </svg>
-                            </div>
-                            <h4><a>Margi Patel</a></h4>
-                            <p>Marketing Lead</p>
-                            <div class="Profile-Social-links" id="MargiLinks">
-                                <a href="https://twitter.com/margipatel22" target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://linkedin.com/in/margipatel22" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box iconbox-red" id="Het">
@@ -871,6 +883,41 @@
                             <div class="Profile-Social-links" id="HetLinks">
                                 <a href="https://twitter.com/HetSuthar7" target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
                                 <a href="https://www.linkedin.com/in/het-suthar-79639a179/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box iconbox-yellow" id="Margi">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
+                                  
+                                <defs>
+                                  <style>
+                                    #margiBG {
+                                      fill: #FBBC04;
+                                      -webkit-transition: all 0.7s ease 0s;
+                                      -moz-transition: all 0.7s ease 0s;
+                                      -o-transition: all 0.7s ease 0s;
+                                      transition: all 0.7s ease 0s;
+                                    }
+                                    .icon-box:hover #margiBG{
+                                      fill: #f5f5f5;
+                                    }
+                                  </style>
+                                </defs>
+                                <circle class="cls-1" id="margiBG" cx="150" cy="150" r="150"/>
+                                <clipPath id="circleView">
+                                <circle class="cls-1" cx="150" cy="150" r="150"/>
+                              </clipPath>
+                                <image href="assets/img/margi.png" style="z-index: 2;" height="300" clip-path="url(#circleView)">
+                              </svg>
+                            </div>
+                            <h4><a>Margi Patel</a></h4>
+                            <p>Marketing Lead</p>
+                            <div class="Profile-Social-links" id="MargiLinks">
+                                <a href="https://twitter.com/margipatel22" target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
+                                <a href="https://linkedin.com/in/margipatel22" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -947,6 +994,43 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box iconbox-teal" id="Manav">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
+                                  
+                                <defs>
+                                  <style>
+                                    #manavBG {
+                                      fill: #FBBC04;
+                                      -webkit-transition: all 0.7s ease 0s;
+                                      -moz-transition: all 0.7s ease 0s;
+                                      -o-transition: all 0.7s ease 0s;
+                                      transition: all 0.7s ease 0s;
+                                    }
+                                    .icon-box:hover #manavBG{
+                                      fill: #f5f5f5;
+                                    }
+                                  </style>
+                                </defs>
+                                <circle class="cls-1" id="manavBG" cx="150" cy="150" r="150"/>
+                                <clipPath id="circleView">
+                                <circle class="cls-1" cx="150" cy="150" r="150"/>
+                              </clipPath>
+                                <image href="assets/img/Helly.jpeg" style="z-index: 2;" height="300" clip-path="url(#circleView)">
+                              </svg>
+                            </div>
+                            <h4><a>Helly Hirpara</a></h4>
+                            <p>Community Lead</p>
+                            <div class="Profile-Social-links" id="ManavLinks">
+                                <a target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/hellyhirpara/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box iconbox-teal" id="Manav">
