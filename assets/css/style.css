@@ -1488,7 +1488,15 @@ section {
 }
 
 #ManavLinks a i {
+    color: var(--GoogleRed)
+}
+
+#HellyLinks a i {
     color: var(--GoogleYellow)
+}
+
+.icon-box:hover #HellyLinks a i {
+    color: #fff
 }
 
 .icon-box:hover #ManavLinks a i {
@@ -1532,6 +1540,10 @@ section {
 }
 
 #Manav:hover {
+    background-color: var(--GoogleRed)
+}
+
+#Helly:hover {
     background-color: var(--GoogleYellow)
 }
 
