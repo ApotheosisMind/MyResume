@@ -1793,15 +1793,36 @@ section {
 
 .tooltiptext {
     visibility: visible;
-    width: 200px;
-    background-color: black;
-    color: #fff;
+    width: 220px;
+    background-color: white;
+    color: var(--GoogleRed);
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    border-radius: 15px / 50%;
+    padding: 5px 5px;
     /* Position the tooltip */
     position: absolute;
+    left: 57%;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
     z-index: 1;
+}
+
+.tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
+    border-color: transparent white transparent transparent;
+}
+
+#Youtube:hover .tooltiptext {
+    color: white;
+    background-color: var(--GoogleRed);
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
 
 @media screen and (max-width: 992px) {
