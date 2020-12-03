@@ -35,8 +35,6 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 *,
@@ -46,7 +44,6 @@
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
     color: #272829;
     background-color: transparent;
     line-height: 1.15;
@@ -69,7 +66,7 @@ section {
 
 body {
     margin: 0;
-    font-family: HKGroteskPro, serif;
+    font-family: Poppins, sans-serif;
     font-size: 1.0625rem;
     font-weight: 400;
     line-height: 1.6;
@@ -197,7 +194,6 @@ code,
 kbd,
 pre,
 samp {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em
 }
 
@@ -258,7 +254,6 @@ optgroup,
 select,
 textarea {
     margin: 0;
-    font-family: inherit;
     font-size: inherit;
     line-height: inherit
 }
@@ -6921,7 +6916,6 @@ a.close.disabled {
     z-index: 1070;
     display: block;
     margin: 0;
-    font-family: HKGroteskPro, serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -7046,7 +7040,6 @@ a.close.disabled {
     z-index: 1060;
     display: block;
     max-width: 380px;
-    font-family: HKGroteskPro, serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.6;
@@ -14092,9 +14085,7 @@ button.bg-white:hover {
     background-color: rgba(0, 0, 0, 0)
 }
 
-.text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
-}
+.text-monospace {}
 
 .text-justify {
     text-align: justify!important
@@ -14848,7 +14839,6 @@ a.badge-gray-700-soft:hover {
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: "\e930";
-    font-family: Feather
 }
 
 .breadcrumb-scroll {
@@ -15557,7 +15547,6 @@ a.card:hover {
 }
 
 .dropdown-toggle::after {
-    font-family: Feather;
     vertical-align: middle;
     border: none!important;
     content: "\e92e"
@@ -16164,18 +16153,6 @@ html {
 .table-align-middle tbody>tr>td,
 .table-align-middle thead>tr>th {
     vertical-align: middle
-}
-
-@font-face {
-    font-family: HKGroteskPro;
-    font-weight: 400;
-    src: url(../fonts/HK%20Grotesk%20Pro-HKGroteskPro-Regular.woff2) format("woff2"), url(../fonts/HK%20Grotesk%20Pro-HKGroteskPro-Regular.woff) format("woff")
-}
-
-@font-face {
-    font-family: HKGroteskPro;
-    font-weight: 600;
-    src: url(../fonts/HK%20Grotesk%20Pro-HKGroteskPro-Medium.woff2) format("woff2"), url(../fonts/HK%20Grotesk%20Pro-HKGroteskPro-Medium.woff) format("woff")
 }
 
 .h1,
@@ -18392,11 +18369,6 @@ body.compensate-for-scrollbar {
     transition: all 0.5s ease 0s;
 }
 
-.flickity-button::after,
-.flickity-button::before {
-    font-family: Feather
-}
-
 .flickity-button:focus,
 .flickity-button:hover {
     background-color: #fff;
@@ -18568,9 +18540,7 @@ body.compensate-for-scrollbar {
     color: #335eea
 }
 
-.ql-container {
-    font-family: HKGroteskPro, serif
-}
+.ql-container {}
 
 .ql-toolbar {
     position: relative;
