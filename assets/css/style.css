@@ -1803,3 +1803,9 @@ section {
     position: absolute;
     z-index: 1;
 }
+
+@media screen and (max-width: 992px) {
+    .tooltiptext {
+        visibility: hidden;
+    }
+}
