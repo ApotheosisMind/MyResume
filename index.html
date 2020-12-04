@@ -30,51 +30,23 @@
 
 </head>
 
-<body onbeforeunload="window.scrollTo(0, 0);">
-    <!--<div id="mouse-circle"></div>
-    <div id="mouse-circle1"></div>
+<body onbeforeunload="DisplayFullPage()" onload="DisplayScroll()">
+
     <script>
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            let mousePosX = 0,
-                mousePosY = 0,
-                mouseCircle = document.getElementById("mouse-circle");
-            mouseCircle1 = document.getElementById("mouse-circle1");
-
-            document.onmousemove = (e) => {
-                mousePosX = e.pageX;
-                mousePosY = e.pageY;
-            };
-
-            let delay = 106,
-                delay1 = 1,
-                revisedMousePosX = 0,
-                revisedMousePosY = 0;
-
-            function delayMouseFollow() {
-                requestAnimationFrame(delayMouseFollow);
-
-                revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-                revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
-
-                mouseCircle.style.top = revisedMousePosY + "px";
-                mouseCircle.style.left = revisedMousePosX + "px";
-            }
-            delayMouseFollow();
-
-
-            function delay1MouseFollow() {
-                requestAnimationFrame(delay1MouseFollow);
-
-                revisedMousePosX += (mousePosX - revisedMousePosX) / delay1;
-                revisedMousePosY += (mousePosY - revisedMousePosY) / delay1;
-
-                mouseCircle1.style.top = revisedMousePosY + "px";
-                mouseCircle1.style.left = revisedMousePosX + "px";
-            }
-            delay1MouseFollow();
+        function DisplayFullPage() {
+            window.scrollTo(0, 0);
+            document.body.style.overflowY = "hidden";
         }
-    </script>-->
 
+        function DisplayScroll() {
+            window.scrollTo(0, 0);
+            document.body.style.overflowY = "hidden";
+
+        }
+        setTimeout(function() {
+            document.body.style.overflowY = 'visible';
+        }, 4000);
+    </script>
 
     <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
@@ -134,7 +106,7 @@
             -->
             <div class="row justify-content-md-center mt-5 text-center">
                 <div class="col-md-4" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">
-                    <a id="ApplyWithDev">Coming Soon</a>
+                    <a id="ApplyWithDev" href="#about">Coming Soon</a>
                 </div>
             </div>
 
@@ -608,12 +580,12 @@
 
         <!-- ======= Resume Section ======= -->
         <section id="resume" class="resume">
-            <div class="container" data-aos="fade-up">
+            <div class="container">
 
                 <div class="section-title">
                     <h2>Gallery</h2>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <iframe src="landkit.goodthemes.html" id="Gallery-Section" scrolling="no" loading="lazy">
                         </iframe>
 
@@ -1172,7 +1144,7 @@
                         <a href="https://mehdev.club"><img src="assets/img/MDC.png" loading="lazy" height="90px"></a>
                     </div>
                     <div id="FooterBtns">
-                        <a href="index.html#features13-l" class="Footer-Btn">About</a> &nbsp;
+                        <a href="#facts" class="Footer-Btn">About</a> &nbsp;
                         <a href="http://mehdev.club/code-of-conduct/" class="Footer-Btn" target="_blank">Code Of Conduct</a>
                     </div>
                 </div>
@@ -1222,7 +1194,7 @@
             document.getElementById("myBar").style.width = scrolled + "%";
 
 
-            //console.log(scrolled);
+            console.log(scrolled);
             //13.353968604908248
             //30.378067654211804
             //41.189476011496794
@@ -1230,17 +1202,19 @@
             //63.32080477559142
             //91.31107671899183
 
-            if (scrolled < 13) {
+            if (scrolled < 5) {
+                document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--MatteBlack)";
+            } else if (scrolled < 19) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleBlue)";
             } else if (scrolled < 30) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleGreen)";
-            } else if (scrolled < 41) {
+            } else if (scrolled < 44) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleRed)";
-            } else if (scrolled < 47) {
+            } else if (scrolled < 58) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleYellow)";
-            } else if (scrolled < 63) {
+            } else if (scrolled < 87) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleBlue)";
-            } else if (scrolled < 91) {
+            } else if (scrolled <= 100) {
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleGreen)";
             }
         }

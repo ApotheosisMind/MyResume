@@ -7,6 +7,10 @@
 }
 
  ::-webkit-scrollbar {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
     width: 10px;
     background: 0 0
 }
@@ -25,9 +29,9 @@
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: "Open Sans", sans-serif;
     color: #272829;
-    overflow-x: hidden;
     background-color: transparent;
     user-select: none;
 }
