@@ -1573,10 +1573,6 @@ section {
     background: 0 0
 }
 
-.twitter {
-    font-size: xx-large;
-}
-
 .progress-bar {
     height: 4px;
     background: var(--GoogleBlue);
