@@ -31,6 +31,15 @@
 </head>
 
 <body onbeforeunload="DisplayFullPage()" onload="DisplayScroll()">
+    <script src="assets/vendor/bootstrap/js/Jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(this).bind('contextmenu', function() {
+                return false;
+            })
+        })
+    </script>
+
 
     <script>
         function DisplayFullPage() {
