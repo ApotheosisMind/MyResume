@@ -628,7 +628,6 @@ section {
 .services .icon-box {
     text-align: center;
     min-width: 275px;
-    min-height: 325px;
     padding: 70px 20px 10px 20px;
     transition: all ease-in-out .3s;
     background: #fff;
@@ -636,6 +635,12 @@ section {
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .05);
     margin-left: auto;
     margin-right: auto
+}
+
+.TeamIcon {
+    min-height: 325px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .services .icon-box .icon {
@@ -1915,4 +1920,22 @@ section {
 
 #about {
     user-select: none;
+}
+
+#speakers .icon {
+    margin-top: -70px;
+}
+
+#speakers .icon-box {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
+}
+
+.SpeakersIcon {
+    height: 250px;
+}
+
+#speakers .icon-box:hover {
+    box-shadow: 0 5px 35px 0 rgba(110, 123, 131, 0.4);
 }
