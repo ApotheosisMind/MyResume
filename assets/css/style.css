@@ -1411,7 +1411,8 @@ section {
 }
 
 .Profile-Social-links {
-    margin-top: 10px
+    margin-top: 10px;
+    font-size: x-large;
 }
 
 .icon-box:hover {
@@ -1432,6 +1433,7 @@ section {
 .Profile-Social-links a,
 .Profile-Social-links a i {
     padding: 0 5px;
+    font-size: x-large;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
@@ -1569,6 +1571,10 @@ section {
     width: 100%;
     height: fit-content;
     background: 0 0
+}
+
+.twitter {
+    font-size: xx-large;
 }
 
 .progress-bar {
