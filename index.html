@@ -304,9 +304,9 @@
                                 <p>Subscribe to find out when we open the registrations</p>
                             </div>
                             <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-0" style="padding: 0px;">
-                                <form class="newsletter-form">
-                                    <input type="email" placeholder="Enter your email">
-                                    <button>Get Started</button>
+                                <form class="newsletter-form" method="POST" autocomplete="off" name="google-sheet">
+                                    <input type="email" placeholder="Enter your email" required name="email">
+                                    <button type="submit">Subscribe</button>
                                 </form>
                             </div>
                         </div>
@@ -992,7 +992,7 @@
                             <p>Technical Lead</p>
                             <div class="Profile-Social-links" id="JayLinks">
                                 <a href="https://www.twitter.com/imjp19_" target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/imjp19" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/imjp19" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1125,7 +1125,7 @@
                 <div class="row mt-1">
                     <div class="col-lg-6 mt-5 mt-lg-0 ContactForm" style="margin-left: auto; margin-right: auto;">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <form action="forms/contact.php" method="post" role="form" target="_blank" class="php-email-form">
                             <div class="form-row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -1244,6 +1244,21 @@
                 document.getElementById("back-to-top").style.background = document.getElementById("myBar").style.background = "var(--GoogleGreen)";
             }
         }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8o2vMmUJbgPsmQfUXDBhjobOO7CL2aK3vAyC2seM9TKqwbnY/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thank you for subscribing our Newsletter :)"))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 
