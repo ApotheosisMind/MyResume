@@ -28,7 +28,8 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
     overflow-x: hidden;
-    background-color: transparent
+    background-color: transparent;
+    user-select: none;
 }
 
 *:active,
@@ -295,7 +296,8 @@ h6 {
     width: 100%;
     height: 100vh;
     background-size: 30%;
-    position: relative
+    position: relative;
+    user-select: none;
 }
 
 @media screen and (min-width: 490px) {
@@ -939,7 +941,16 @@ section {
     font-size: 14px;
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 5px
+    padding-bottom: 5px;
+    user-select: none;
+}
+
+#contact {
+    user-select: none;
+}
+
+#services {
+    user-select: none;
 }
 
 #footer h3 {
@@ -1894,4 +1905,8 @@ section {
     #mouse-circle1 {
         display: none;
     }
+}
+
+#about {
+    user-select: none;
 }
