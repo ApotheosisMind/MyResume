@@ -30,7 +30,7 @@
 
 </head>
 
-<body onbeforeunload="DisplayFullPage()" onload="DisplayScroll()">
+<body>
     <script src="assets/vendor/bootstrap/js/Jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -38,23 +38,6 @@
                 return false;
             })
         })
-    </script>
-
-
-    <script>
-        function DisplayFullPage() {
-            window.scrollTo(0, 0);
-            document.body.style.overflowY = "hidden";
-        }
-
-        function DisplayScroll() {
-            window.scrollTo(0, 0);
-            document.body.style.overflowY = "hidden";
-
-        }
-        setTimeout(function() {
-            document.body.style.overflowY = 'visible';
-        }, 4000);
     </script>
 
     <div class="progress-container">
@@ -1312,7 +1295,7 @@
             document.getElementById("myBar").style.width = scrolled + "%";
 
 
-            console.log(scrolled);
+            //console.log(scrolled);
             //13.353968604908248
             //30.378067654211804
             //41.189476011496794
