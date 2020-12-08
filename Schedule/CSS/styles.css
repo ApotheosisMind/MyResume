@@ -142,7 +142,7 @@ ul {
     color: var(--MatteBlack) !important;
 }
 
-.GColor a:active .GColor {
+.GColor a:focus {
     box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
     background-color: var(--MatteBlack) !important;
 }
