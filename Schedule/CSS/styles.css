@@ -1,3 +1,7 @@
+body {
+    color: var(--MatteBlack) !important;
+}
+
 .button-schedule {
     border-radius: 10px;
 }
@@ -72,8 +76,14 @@ ul {
     left: -2.5rem;
 }
 
-.nav-item {
-    border-radius: 20px / 50%;
+.nav-item,
+.nav-pills,
+.cornerEdge {
+    border-radius: 20px / 50% !important;
+}
+
+.nav-pills {
+    justify-content: center;
 }
 
 .custom-Card {
@@ -97,7 +107,7 @@ ul {
     padding-right: 5px;
     padding-left: 5px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .05);
-    /* padding: 50px 0px; */
+    padding: 10px 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     -webkit-transition: all .5s ease 0s;
@@ -117,4 +127,67 @@ ul {
 
 .custom-Card:hover {
     box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .2);
+}
+
+.GColor a {
+    background-color: white !important;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+.GColor a {
+    box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
+    color: var(--MatteBlack) !important;
+}
+
+.GColor a:active .GColor {
+    box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
+    background-color: var(--MatteBlack) !important;
+}
+
+.GColor:nth-child(1):hover a {
+    background-color: var(--GoogleBlue) !important;
+}
+
+.GColor:nth-child(2):hover a {
+    background-color: var(--GoogleRed) !important;
+}
+
+.GColor:nth-child(3):hover a {
+    background-color: var(--GoogleYellow) !important;
+}
+
+.GColor:nth-child(4):hover a {
+    background-color: var(--GoogleGreen) !important;
+}
+
+.GColor:nth-child(5):hover a {
+    background-color: var(--GoogleBlue) !important;
+}
+
+.GColor:nth-child(6):hover a {
+    background-color: var(--GoogleRed) !important;
+}
+
+.GColor:nth-child(7):hover a {
+    background-color: var(--GoogleYellow) !important;
+}
+
+.GColor:nth-child(8):hover a {
+    background-color: var(--GoogleGreen) !important;
+}
+
+.GColor:nth-child(9):hover a {
+    background-color: var(--GoogleBlue) !important;
+}
+
+.GColor:nth-child(10):hover a {
+    background-color: var(--GoogleRed) !important;
+}
+
+.GColor:hover a {
+    color: white !important;
+    box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
 }
