@@ -111,6 +111,7 @@ ul {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
+        border-radius: 20px /50%;
     }
 }
 
