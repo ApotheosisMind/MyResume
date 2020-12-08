@@ -1,6 +1,5 @@
 .button-schedule {
     border-radius: 10px;
-
 }
 
 .card-border {
@@ -27,22 +26,24 @@ ul {
 .schedule-title {
     font-size: 16px;
 }
-.align-center{
+
+.align-center {
     display: flex !important;
     align-items: center;
     flex-direction: column;
 }
-.card-align-center{
+
+.card-align-center {
     display: flex !important;
     flex-direction: row;
     overflow-x: auto;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
     white-space: nowrap;
     padding-right: 0;
     z-index: 3;
 }
 
-.paddle{
+.paddle {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -53,7 +54,7 @@ ul {
     color: var(--text-tertiary);
     opacity: .75;
     cursor: pointer;
-    box-shadow: 0 1px 5px 0 rgba(20,19,19,.212), 0 1px 5px 0 rgba(20,19,19,.212);
+    box-shadow: 0 1px 5px 0 rgba(20, 19, 19, .212), 0 1px 5px 0 rgba(20, 19, 19, .212);
     background: #fff;
     border-radius: 50%;
     border: none;
@@ -62,10 +63,44 @@ ul {
     z-index: 3;
 }
 
-.paddle-left{
+.paddle-left {
     right: -2.5rem;
 }
 
-.paddle-right{
+.paddle-right {
     left: -2.5rem;
 }
+
+.custom-Card {
+    padding: 50px 0px;
+    border: none;
+    border-radius: 40px /50%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .05);
+}
+
+@media (min-width: 768px) {
+    .custom-Card {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+.col-md-8 {}
