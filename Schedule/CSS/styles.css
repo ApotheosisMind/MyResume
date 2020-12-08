@@ -93,8 +93,8 @@ ul {
     background-clip: border-box;
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .05);
     padding: 50px 0px;
     margin-top: 10px;
