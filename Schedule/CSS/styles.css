@@ -1,0 +1,71 @@
+.button-schedule {
+    border-radius: 10px;
+
+}
+
+.card-border {
+    border-radius: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.txt-large {
+    font-size: 30px;
+}
+
+.txt-small {
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.speaker-pic {
+    border-radius: 60px;
+}
+
+.schedule-title {
+    font-size: 16px;
+}
+.align-center{
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+}
+.card-align-center{
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth; 
+    white-space: nowrap;
+    padding-right: 0;
+    z-index: 3;
+}
+
+.paddle{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: var(--text-tertiary);
+    opacity: .75;
+    cursor: pointer;
+    box-shadow: 0 1px 5px 0 rgba(20,19,19,.212), 0 1px 5px 0 rgba(20,19,19,.212);
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    transition: var(--transition-speed);
+    outline: none;
+    z-index: 3;
+}
+
+.paddle-left{
+    right: -2.5rem;
+}
+
+.paddle-right{
+    left: -2.5rem;
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "EventTitle": "Speaker Session",
+        "EventTime": "12:00 - 14:00"
+    },
+    {
+        "EventTitle": "Mentor Session",
+        "EventTime": "12:00 - 15:00"
+    },
+    {
+        "EventTitle": "Mentor Session",
+        "EventTime": "12:00 - 15:00"
+    },
+    {
+        "EventTitle": "Training Session",
+        "EventTime": "12:00 - 15:00"
+    },
+    {
+        "EventTitle": "Filler Session",
+        "EventTime": "12:00 - 15:00"
+    }
+]
