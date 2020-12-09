@@ -6,3 +6,7 @@ assets/img/POfPython Week.svg
 assets/css/GoogleFonts.css
 assets/vendor/bootstrap/css/bootstrap.min.css
 assets/vendor/boxicons/css/boxicons.min.css
+assets/vendor/venobox/venobox.css
+assets/vendor/aos/aos.css
+assets/vendor/bootstrap/js/Jquery.min.js
+assets/vendor/bootstrap/js/bootstrap.bundle.min.js
