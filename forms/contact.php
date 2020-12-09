@@ -2,16 +2,18 @@
 if(isset($_POST['name']) &&  isset($_POST['email'])){
   $name = $_POST['name'];
   $email = $_POST['email'];
+  $message = $_POST['message'];
+  $subject1 = $_POST['subject'];
   $to = 'hello@mehdev.club';
   $subject = "Contact us response from TPW website";
-  $body = '<html>
-  <body>
-  <h2>Message</h2>
-  <hr>
-  <p>Name<br>'.$name.'</p>
-  <p>Email<br>'.$email.'</p>
-  </body>
-  </html>';
+  $body = '
+  
+  
+  Name : '.$name.'
+  Email : '.$email.'
+  Subject : '.$subject1.'
+  Message : '.$message.'
+  ';
 
   $headers = "From: ".$name."<".$email.">\r\n";
   $headers .="Reply-To: ".$email."\r\n";
@@ -20,11 +22,10 @@ if(isset($_POST['name']) &&  isset($_POST['email'])){
 
   $send = mail($to, $subject, $body, $headers);
    if($send){
-     echo '<br>';
-     echo 'Thank you:)';
+    echo '<script>alert("Thank you for contacting us. We will reach you shortly:)")</script>'; 
 
    }else{
-     echo 'error';
+     echo '<script>alert("Error")</script>';
    }
 }
 ?>
