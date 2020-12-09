@@ -1476,11 +1476,44 @@ section {
 }
 
 #BratinLinks a i {
-    color: var(--GoogleGreen)
+    color: var(--GoogleRed)
 }
 
-.icon-box:hover #BratinLinks a i {
+#ayushLinks a i {
+    color: var(--GoogleBlue)
+}
+
+#AnubhavLinks a i {
+    color: var(--GoogleRed)
+}
+
+#gauravLinks a i {
+    color: var(--GoogleRed)
+}
+
+#Shivay1Links a i {
+    color: var(--GoogleYellow)
+}
+
+.icon-box:hover #BratinLinks a i,
+.icon-box:hover #gauravLinks a i,
+.icon-box:hover #ayushLinks a i,
+.icon-box:hover #AnubhavLinks a i,
+.icon-box:hover #Shivay1Links a i,
+.icon-box:hover #kautukLinks a i {
     color: #fff
+}
+
+#ayush:hover {
+    background-color: var(--GoogleBlue);
+}
+
+#Anubhav:hover {
+    background-color: var(--GoogleRed);
+}
+
+#Shivay1:hover {
+    background-color: var(--GoogleYellow);
 }
 
 #MargiLinks a i {
@@ -1763,7 +1796,7 @@ section {
     }
 }
 
-#ApplyWithDev {
+#devfolio-apply-now {
     background-color: White;
     border-radius: 20px/50%;
     padding: 10px 25px;
@@ -1774,12 +1807,18 @@ section {
     transition: all .5s ease 0s;
     cursor: pointer;
     box-shadow: 0 5px 35px 0 rgba(110, 123, 131, .25);
+    border: none;
+    fill: var(--GoogleBlue);
 }
 
-#ApplyWithDev:hover {
+#devfolio-apply-now:hover {
     color: white;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .25);
     background-color: var(--GoogleYellow);
+}
+
+#devfolio-apply-now:hover svg {
+    fill: white;
 }
 
 #Youtube,
