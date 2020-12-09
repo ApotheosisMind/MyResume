@@ -130,7 +130,7 @@ ul {
     cursor: pointer;
 }
 
-.GColor a {
+.GPColor a {
     background-color: white !important;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -138,57 +138,52 @@ ul {
     transition: all .5s ease 0s;
 }
 
-.GColor a {
+.GPColor a {
     box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
     color: var(--MatteBlack) !important;
 }
 
-.GColor a:focus {
-    box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
-    background-color: var(--MatteBlack) !important;
-}
-
-.GColor:nth-child(1):hover a {
+.GPColor:nth-child(1):hover a {
     background-color: var(--GoogleBlue) !important;
 }
 
-.GColor:nth-child(2):hover a {
+.GPColor:nth-child(2):hover a {
     background-color: var(--GoogleRed) !important;
 }
 
-.GColor:nth-child(3):hover a {
+.GPColor:nth-child(3):hover a {
     background-color: var(--GoogleYellow) !important;
 }
 
-.GColor:nth-child(4):hover a {
+.GPColor:nth-child(4):hover a {
     background-color: var(--GoogleGreen) !important;
 }
 
-.GColor:nth-child(5):hover a {
+.GPColor:nth-child(5):hover a {
     background-color: var(--GoogleBlue) !important;
 }
 
-.GColor:nth-child(6):hover a {
+.GPColor:nth-child(6):hover a {
     background-color: var(--GoogleRed) !important;
 }
 
-.GColor:nth-child(7):hover a {
+.GPColor:nth-child(7):hover a {
     background-color: var(--GoogleYellow) !important;
 }
 
-.GColor:nth-child(8):hover a {
+.GPColor:nth-child(8):hover a {
     background-color: var(--GoogleGreen) !important;
 }
 
-.GColor:nth-child(9):hover a {
+.GPColor:nth-child(9):hover a {
     background-color: var(--GoogleBlue) !important;
 }
 
-.GColor:nth-child(10):hover a {
+.GPColor:nth-child(10):hover a {
     background-color: var(--GoogleRed) !important;
 }
 
-.GColor:hover a {
+.GPColor:hover a {
     color: white !important;
     box-shadow: 0 5px 20px 0 rgba(110, 123, 131, .08);
 }
