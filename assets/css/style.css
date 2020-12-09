@@ -1947,16 +1947,16 @@ section {
 }
 
 .icon-sponsers {
-    width: 350px;
-    height: 200px;
+    min-width: 250px;
+    min-height: 150px;
     text-align: center;
     padding: 70px 20px 10px 20px;
     transition: all ease-in-out .3s;
     background: #fff;
     border-radius: 30px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .05);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .icon-sponsers:hover {
@@ -1968,16 +1968,16 @@ section {
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
-    height: 200px;
-    width: 250px;
+    height: 150px;
+    width: 200px;
     position: absolute;
-    top: 10px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .icon-sponsers:hover img {
-    height: 250px;
-    width: 300px;
-    margin-top: -20px;
+    height: 175px;
+    width: 225px;
+    margin-top: -15px;
 }
