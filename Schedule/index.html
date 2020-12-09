@@ -90,6 +90,8 @@
         <!-- Detailed schedule:- Workshop -->
         <div class="tab-content mt-4 container">
             <div class="tab-pane fade show active" id="workshop" role="tabpanel">
+
+
                 <!-- Days tabs start -->
                 <ul class="nav nav-pills " id="pills-tab" role="tablist">
                     <li class="nav-item m-1 GColor">
@@ -126,9 +128,29 @@
                     <!-- Day 1 schedule -->
                     <div class="tab-pane fade show active" id="day1" role="tabpanel">
                         <div class="mb-3 text-center"><span class="txt-small"><b>1st January 2020 / Friday</b></span></div>
+
+                        <script>
+                            function ShowDataDay(ths) {
+                                console.log(ths);
+                                var allclass = document.getElementsByClassName("custom-Card");
+                                for (var i = 0; i < allclass.length; i++) {
+                                    allclass[i].querySelector('.invisibleClass').style.display = "none";
+
+                                    if (screen.width < "768px")
+                                        allclass[i].style.borderRadius = "10% /50%";
+                                    else
+                                        allclass[i].style.borderRadius = "6% /50%";
+                                }
+                                if (screen.width < "768px")
+                                    ths.style.borderRadius = "20% /50%";
+                                else
+                                    ths.style.borderRadius = "8% /50%";
+                                ths.querySelector('.invisibleClass').style.display = "block";
+                            }
+                        </script>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -136,10 +158,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -147,14 +176,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -168,7 +209,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>02nd January 2020 / Saturday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -176,10 +217,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -187,14 +234,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -208,7 +267,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>03rd January 2020 / Sunday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -216,10 +275,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -227,14 +292,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +323,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>04th January 2020 / Monday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -254,10 +331,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -265,14 +348,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +379,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>05th January 2020 / Tuesday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -292,10 +387,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -303,14 +404,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -322,7 +435,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>06th January 2020 / Wednesday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -330,10 +443,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -341,14 +460,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -360,7 +491,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>7th January 2020 / Thursday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:15</span></div>
@@ -368,10 +499,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:15 - 16:45</span></div>
@@ -379,14 +516,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:45 - 18:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Speaker Session 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +568,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>08th January 2020 / Friday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>10:00 - 11:00</span></div>
@@ -427,10 +576,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>12:00 </span></div>
@@ -438,10 +593,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>15:00 - 16:00</span></div>
@@ -449,10 +610,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 3 ends -->
                             <!-- Event 4 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>18:00 - 19:00</span></div>
@@ -460,14 +627,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 4 ends -->
                             <!-- Event 5 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>20:00 - 21:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Mentor Connect Session - 1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -480,7 +659,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>09th January 2020 / Saturday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>00:00</span></div>
@@ -488,10 +667,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>00:00 - 01:00</span></div>
@@ -499,10 +684,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>06:00 - 07:00</span></div>
@@ -510,32 +701,50 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 3 ends -->
                             <!-- Event 4 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>09:00 - 10:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Mentor Connect Session 2</span>
                                         </div>
                                     </div>
+                                    <div class="p-2 invisibleClass">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Event 4 ends -->
                             <!-- Event 5 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>12:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>24 Hours Remaining</span>
                                         </div>
                                     </div>
+                                    <div class="p-2 invisibleClass">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Event 6 ends -->
                             <!-- Event 7 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>12:00 - 13:00</span></div>
@@ -543,10 +752,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 7 ends -->
                             <!-- Event 8 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>18:00 - 19:00</span></div>
@@ -554,14 +769,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 8 ends -->
                             <!-- Event 9 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>20:00 - 21:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Mentor Connect Session 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -574,7 +801,7 @@
                         <div class="mb-3 text-center"><span class="txt-small"><b>10th January 2020 / Sunday</b></span></div>
                         <div class="align-center">
                             <!-- Event 1 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>00:00</span></div>
@@ -582,10 +809,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 1 ends -->
                             <!-- Event 2 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>00:00 - 01:00</span></div>
@@ -593,10 +826,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 2 ends -->
                             <!-- Event 3 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>06:00 - 07:00</span></div>
@@ -604,10 +843,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 3 ends -->
                             <!-- Event 4 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>09:00 - 10:00</span></div>
@@ -615,10 +860,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 4 ends -->
                             <!-- Event 5 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>10:00 - 11:00</span></div>
@@ -626,10 +877,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 6 ends -->
                             <!-- Event 7 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>12:00</span></div>
@@ -637,10 +894,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 7 ends -->
                             <!-- Event 8 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>12:15 - 13:00</span></div>
@@ -648,10 +911,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 8 ends -->
                             <!-- Event 9 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>16:00</span></div>
@@ -659,14 +928,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Event 9 ends -->
                             <!-- Event 9 -->
-                            <div class="custom-Card">
+                            <div class="custom-Card" onclick="ShowDataDay(this)">
                                 <div class="p-2">
                                     <div class="d-flex justify-content-center">
                                         <div class="col-md-6 col-4"><span>21:00 - 22:00</span></div>
                                         <div class="schedule-title col-md-6 col-8"><span>Closing Ceremony</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-2 invisibleClass">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="schedule-title col-md-12 col-8"><span>Speaker Session 1</span>
                                         </div>
                                     </div>
                                 </div>
@@ -769,19 +1050,8 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw8o2vMmUJbgPsmQfUXDBhjobOO7CL2aK3vAyC2seM9TKqwbnY/exec'
-        const form = document.forms['google-sheet']
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => alert("Thank you for subscribing our Newsletter :)"))
-                .catch(error => console.error('Error!', error.message))
-        })
     </script>
+
 
 
 </body>
