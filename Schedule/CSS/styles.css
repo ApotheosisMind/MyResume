@@ -88,7 +88,7 @@ ul {
 
 .custom-Card {
     border: none;
-    border-radius: 10% /50%;
+    border-radius: 40px /50%;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -121,7 +121,7 @@ ul {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
-        border-radius: 5% /50%;
+        border-radius: 25px /50%;
     }
 }
 
