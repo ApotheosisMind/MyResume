@@ -1963,14 +1963,20 @@ section {
     box-shadow: 0 5px 25px 0 rgba(110, 123, 131, .2);
 }
 
-.icon-sponsers svg {
+.icon-sponsers img {
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.icon-sponsers:hover svg {
+.icon-sponsers:hover img {
     height: 250px;
     width: 300px;
     margin-top: -20px;
