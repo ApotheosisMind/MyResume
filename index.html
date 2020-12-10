@@ -1830,6 +1830,40 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        const LazyIcon = () => {
+            let e = {};
+            const t = () => {
+                    let t = document.createElement("link");
+                    t.rel = "stylesheet", t.type = "text/css", t.href = e.src, document.head.appendChild(t)
+                },
+                o = () => {
+                    let o = document.querySelectorAll(e.selector),
+                        r = new IntersectionObserver((o, r) => {
+                            o[0].intersectionRatio > 0 && (t(), sessionStorage[e.selector] = !0, r.disconnect())
+                        }, {
+                            rootMargin: e.rootMargin
+                        });
+                    o.forEach(e => {
+                        r.observe(e)
+                    })
+                };
+            return {
+                observe: r => {
+                    e = r, ("IntersectionObserver" in window && !sessionStorage[e.selector] ? o : t)()
+                }
+            }
+        };
+        window.addEventListener('load', () => {
+            LazyIcon().observe({
+                'src': 'https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css',
+                'selector': '.bx',
+                'rootMargin': '150px 0px'
+            });
+        });
+    </script>
+
+
+    <script>
         window.onscroll = function() {
             myFunction()
         };
