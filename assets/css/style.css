@@ -1832,13 +1832,15 @@ section {
 /* #devfolio-apply-now:hover {
     color: white;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .25);
-    background-color: var(--GoogleYellow); */
+    background-color: var(--GoogleYellow); 
 
 
-}
+}*/
+
 #devfolio-apply-now:focus {
     outline: none;
 }
+
 #devfolio-apply-now:hover svg {
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -1846,6 +1848,7 @@ section {
     transition: all .5s ease 0s;
     fill: white;
 }
+
 #Youtube,
 #Discord {
     border-radius: 50%;
@@ -1861,45 +1864,51 @@ section {
     padding: 15px 10px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
+
 #Discord svg {
     height: 25px;
     margin-top: -2px;
 }
+
 #Youtube svg {
     margin-top: -3px;
     height: 21px;
 }
+
 #Discord:hover {
     background-color: var(--GoogleGreen);
 }
+
 #Youtube:hover {
     background-color: var(--GoogleRed);
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .5);
 }
+
 @media screen and (max-width: 575px) {
     #AddTop {
         margin-top: -25px;
         margin-left: 100px;
     }
-    
     #AddLeft {
         margin-left: -50px;
     }
 }
+
 @media screen and (max-width: 992px) and (min-width: 576px) {
     #Youtube {
         margin-left: 20px;
     }
-    
     #AddLeft {
         margin-left: -40px;
     }
 }
+
 @media screen and (min-width: 992px) {
     #comingSoonChange {
         margin-left: -100px;
     }
 }
+
 .tooltiptext {
     visibility: visible;
     width: 220px;
@@ -1908,43 +1917,48 @@ section {
     border-radius: 15px / 50%;
     padding: 5px 5px;
     /* Position the tooltip */
-    
     position: absolute;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
     z-index: 1;
 }
+
 #YoutubeToolTip {
     color: var(--GoogleRed);
     left: 57%;
 }
+
 #DiscordToolTip {
     color: var(--GoogleGreen);
     right: 57%;
 }
+
 .tooltiptext::after {
     content: " ";
     position: absolute;
     top: 50%;
     /* To the left of the tooltip */
-    
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
 }
+
 #YoutubeToolTip::after {
     right: 100%;
     border-color: transparent white transparent transparent;
 }
+
 #DiscordToolTip::after {
     left: 100%;
     border-color: transparent transparent transparent white;
 }
+
 @media screen and (max-width: 992px) {
     .tooltiptext {
         visibility: hidden;
     }
 }
+
 #mouse-circle {
     position: absolute;
     width: 32px;
@@ -1956,6 +1970,7 @@ section {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0);
     z-index: 15;
 }
+
 #mouse-circle1 {
     position: absolute;
     width: 8px;
@@ -1968,29 +1983,36 @@ section {
     box-shadow: 0 0 16px rgba(255, 255, 255, 0);
     z-index: 15;
 }
+
 @media screen and (max-width: 992px) {
     #mouse-circle,
     #mouse-circle1 {
         display: none;
     }
 }
+
 #about {
     user-select: none;
 }
+
 #speakers .icon {
     margin-top: -70px;
 }
+
 #speakers .icon-box {
     margin-bottom: 50px;
     margin-top: 50px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .08);
 }
+
 .SpeakersIcon {
     height: 250px;
 }
+
 #speakers .icon-box:hover {
     box-shadow: 0 5px 35px 0 rgba(110, 123, 131, 0.4);
 }
+
 .icon-sponsers {
     min-width: 250px;
     min-height: 150px;
@@ -2003,9 +2025,11 @@ section {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .icon-sponsers:hover {
     box-shadow: 0 5px 25px 0 rgba(110, 123, 131, .2);
 }
+
 .icon-sponsers img {
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -2018,6 +2042,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .icon-sponsers:hover img {
     height: 175px;
     width: 225px;
