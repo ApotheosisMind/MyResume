@@ -1575,7 +1575,7 @@ section {
 }
 
 #SahilLinks a i {
-    color: var(--GoogleBlue)
+    color: var(--GoogleYellow)
 }
 
 .icon-box:hover #SahilLinks a i {
@@ -1618,8 +1618,32 @@ section {
     background-color: var(--GoogleGreen)
 }
 
+#Tushar:hover {
+    background-color: var(--GoogleBlue);
+}
+
+#Tushar div a i {
+    color: var(--GoogleBlue);
+}
+
+#Tushar:hover div a i {
+    color: white;
+}
+
+#ShivayTeam:hover {
+    background-color: var(--GoogleGreen);
+}
+
+#ShivayTeam div a i {
+    color: var(--GoogleGreen);
+}
+
+#ShivayTeam:hover div a i {
+    color: white;
+}
+
 #Sahil:hover {
-    background-color: var(--GoogleBlue)
+    background-color: var(--GoogleYellow)
 }
 
 .progress-container {
