@@ -1473,6 +1473,18 @@ section {
     color: #fff
 }
 
+#BratinTeam:hover {
+    background-color: var(--GoogleGreen);
+}
+
+#BratinTeamLinks a i {
+    color: var(--GoogleGreen);
+}
+
+#BratinTeam:hover #BratinTeamLinks a i {
+    color: white;
+}
+
 #BratinLinks a i {
     color: var(--GoogleRed)
 }
@@ -1515,7 +1527,7 @@ section {
 }
 
 #MargiLinks a i {
-    color: var(--GoogleYellow)
+    color: var(--GoogleRed)
 }
 
 .icon-box:hover #MargiLinks a i {
@@ -1523,7 +1535,7 @@ section {
 }
 
 #HetLinks a i {
-    color: var(--GoogleBlue)
+    color: var(--GoogleYellow)
 }
 
 .icon-box:hover #HetLinks a i {
@@ -1539,7 +1551,7 @@ section {
 }
 
 #JayLinks a i {
-    color: var(--GoogleGreen)
+    color: var(--GoogleBlue)
 }
 
 .icon-box:hover #JayLinks a i {
@@ -1551,7 +1563,7 @@ section {
 }
 
 #HellyLinks a i {
-    color: var(--GoogleYellow)
+    color: var(--GoogleGreen)
 }
 
 .icon-box:hover #HellyLinks a i {
@@ -1583,11 +1595,11 @@ section {
 }
 
 #Margi:hover {
-    background-color: var(--GoogleBlue)
+    background-color: var(--GoogleYellow)
 }
 
 #Het:hover {
-    background-color: var(--GoogleYellow)
+    background-color: var(--GoogleRed)
 }
 
 #Shivay:hover {
@@ -1595,7 +1607,7 @@ section {
 }
 
 #Jay:hover {
-    background-color: var(--GoogleGreen)
+    background-color: var(--GoogleBlue)
 }
 
 #Manav:hover {
@@ -1603,7 +1615,7 @@ section {
 }
 
 #Helly:hover {
-    background-color: var(--GoogleYellow)
+    background-color: var(--GoogleGreen)
 }
 
 #Sahil:hover {
