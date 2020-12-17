@@ -1526,6 +1526,18 @@ section {
     background-color: var(--GoogleYellow);
 }
 
+#Andrew:hover {
+    background-color: var(--GoogleGreen);
+}
+
+#Andrew:hover #AndrewLinks a i {
+    color: white;
+}
+
+#AndrewLinks a i {
+    color: var(--GoogleGreen);
+}
+
 #MargiLinks a i {
     color: var(--GoogleRed)
 }
@@ -1895,8 +1907,8 @@ section {
     cursor: pointer;
     background-color: #fff;
     width: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding: 15px 10px;
     box-shadow: 0 5px 15px 0 rgba(110, 123, 131, .3);
 }
@@ -1922,11 +1934,22 @@ section {
 
 @media screen and (max-width: 575px) {
     #AddTop {
-        margin-top: -25px;
-        margin-left: 100px;
+        /* margin-top: -25px; */
+        float: right;
+        max-width: 50%;
+        z-index: 1;
     }
     #AddLeft {
-        margin-left: -50px;
+        /* margin-left: -50px;*/
+        float: left;
+        z-index: 2;
+        max-width: 50%;
+    }
+    #Youtube {
+        margin-left: -50%;
+    }
+    #Discord {
+        margin-right: -50%;
     }
 }
 
