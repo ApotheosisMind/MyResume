@@ -2110,7 +2110,6 @@ section {
 
 #ToggleFullScreen {
     position: absolute;
-    right: 25px;
     top: 15px;
     font-size: 1.5em;
     color: #d0d0d0;
@@ -2118,7 +2117,6 @@ section {
     -moz-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
     transition: all .5s ease 0s;
-    display: none;
 }
 
 #ToggleFullScreen:hover {
@@ -2126,8 +2124,14 @@ section {
     color: var(--GoogleRed);
 }
 
+@media screen and (max-width: 1024px) {
+    #ToggleFullScreen {
+        left: 25px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     #ToggleFullScreen {
-        display: block;
+        right: 25px;
     }
 }
