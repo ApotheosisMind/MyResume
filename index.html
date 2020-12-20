@@ -82,6 +82,32 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
+
+        <a id="ToggleFullScreen" onclick="ToggleFullScreen()" style="z-index: 10;"><i class='bx bx-fullscreen'></i></a>
+        <script>
+            function ToggleFullScreen() {
+                if ((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+                    if (document.documentElement.requestFullScreen) {
+                        document.documentElement.requestFullScreen();
+                    } else if (document.documentElement.mozRequestFullScreen) {
+                        document.documentElement.mozRequestFullScreen();
+                    } else if (document.documentElement.webkitRequestFullScreen) {
+                        document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                    }
+                    document.getElementById("ToggleFullScreen").innerHTML = "<i class='bx bx-exit-fullscreen'></i>";
+                } else {
+                    if (document.cancelFullScreen) {
+                        document.cancelFullScreen();
+                    } else if (document.mozCancelFullScreen) {
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitCancelFullScreen) {
+                        document.webkitCancelFullScreen();
+                    }
+                    document.getElementById("ToggleFullScreen").innerHTML = "<i class='bx bx-fullscreen'></i>";
+                }
+            }
+        </script>
+
         <div class="container" data-aos="zoom-in" data-aos-delay="50">
             <h1 class="text-center">
                 <video id="mylogo" autoplay muted>
@@ -1011,7 +1037,7 @@
                         <h4>Platinium Sponsor</h4>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://devfolio.co/">
                             <div class="icon-sponsers">
                                 <img src="Svg/Devfolio.svg" loading="lazy" style="z-index: 2;">
@@ -1026,7 +1052,7 @@
                         <h4>Gold Sponsor</h4>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.github.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/github.webp" loading="lazy" style="z-index: 2;">
@@ -1035,7 +1061,7 @@
                     </div>
 
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://hackplus.io/">
                             <div class="icon-sponsers">
                                 <img src="Svg/hackplus.svg" loading="lazy" style="z-index: 2;">
@@ -1043,7 +1069,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://webiflu.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/Webiflu.svg" loading="lazy" style="z-index: 2;">
@@ -1051,7 +1077,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://matic.network/">
                             <div class="icon-sponsers">
                                 <img src="Svg/matic.svg" loading="lazy" style="z-index: 2;">
@@ -1059,7 +1085,7 @@
                         </a>
                     </div>
 
-                    <!-- <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <!-- <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://fold.money/">
                             <div class="icon-sponsers">
                                 <img src="Svg/fold.svg" loading="lazy" style="z-index: 2;">
@@ -1067,7 +1093,7 @@
                         </a>
                     </div> -->
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://tezos.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/Tezos.png" loading="lazy" style="z-index: 2;">
@@ -1075,7 +1101,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.portis.io/">
                             <div class="icon-sponsers">
                                 <img src="Svg/portis.svg" loading="lazy" style="z-index: 2;">
@@ -1083,7 +1109,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://akashtechnolabs.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/akash-technolabs.svg" loading="lazy" style="z-index: 2;">
@@ -1103,28 +1129,28 @@
                         <h4>Sponsor</h4>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.jetbrains.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/JetBrains.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.digitalocean.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/digitalocean.png" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.codingninjas.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/CodingNinja.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://codingblocks.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/codingblocks.svg" loading="lazy" style="z-index: 2;">
@@ -1132,7 +1158,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://1password.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/1Password.svg" loading="lazy" style="z-index: 2;">
@@ -1140,70 +1166,70 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://balsamiq.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/balsamiq.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.clerky.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/Clerky.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.echoar.xyz/">
                             <div class="icon-sponsers">
                                 <img src="Svg/echoAR.png" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://egghead.io/">
                             <div class="icon-sponsers">
                                 <img src="Svg/egghead.io.png" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.elastic.co/">
                             <div class="icon-sponsers">
                                 <img src="Svg/elastic.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://repl.it/">
                             <div class="icon-sponsers">
                                 <img src="Svg/repl.it.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.sashido.io/en/">
                             <div class="icon-sponsers">
                                 <img src="Svg/sashido.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.taskade.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/taskade.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.wolfram.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/wolfram.png" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://www.linode.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/linode.svg" loading="lazy" style="z-index: 2;">
@@ -1211,21 +1237,21 @@
                         </a>
                     </div>
 
-                    <!-- <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <!-- <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://streamyard.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/streamyard.svg" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div> -->
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://gen.xyz/">
                             <div class="icon-sponsers">
                                 <img src="Svg/xyz.webp" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://magoosh.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/magoosh.png" loading="lazy" style="z-index: 2;">
@@ -1241,7 +1267,7 @@
                         <h4>Streaming Partner</h4>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 align-items-stretch">
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://streamyard.com/">
                             <div class="icon-sponsers">
                                 <img src="Svg/streamyard.svg" loading="lazy" style="z-index: 2;">
@@ -1779,7 +1805,7 @@
                                         clip-path="url(#circleView)">
                                 </svg>
                             </div>
-                            <h4><a>Akhil Tushar</a></h4>
+                            <h4><a>Tushar</a></h4>
                             <p>Marketing Lead</p>
                             <div class="Profile-Social-links">
                                 <a href="https://twitter.com/Tusharakhil" target="_blank" class="twitter"><i
@@ -2177,6 +2203,20 @@
                 .then(response => alert("Thank you for subscribing our Newsletter :)"))
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EB0LL9VJD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EB0LL9VJD6');
     </script>
 
 

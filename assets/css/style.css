@@ -2107,3 +2107,27 @@ section {
     width: 225px;
     margin-top: -15px;
 }
+
+#ToggleFullScreen {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 1.5em;
+    color: #d0d0d0;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    display: none;
+}
+
+#ToggleFullScreen:hover {
+    cursor: pointer;
+    color: var(--GoogleRed);
+}
+
+@media screen and (min-width: 1024px) {
+    #ToggleFullScreen {
+        display: block;
+    }
+}
