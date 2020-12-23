@@ -36,13 +36,6 @@ body {
     user-select: none;
 }
 
-* {
-    -webkit-transition: all .5s ease 0s;
-    -moz-transition: all .5s ease 0s;
-    -o-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
-}
-
 *:active,
 *:focus,
 *:hover {
@@ -1464,207 +1457,6 @@ section {
     color: #fff
 }
 
-#TirthakLinks a i {
-    color: var(--GoogleBlue)
-}
-
-.icon-box:hover #TirthakLinks a i {
-    color: #fff
-}
-
-#SiddLinks a i {
-    color: var(--GoogleYellow)
-}
-
-.icon-box:hover #SiddLinks a i {
-    color: #fff
-}
-
-#BratinTeam:hover {
-    background-color: var(--GoogleGreen);
-}
-
-#BratinTeamLinks a i {
-    color: var(--GoogleGreen);
-}
-
-#BratinTeam:hover #BratinTeamLinks a i {
-    color: white;
-}
-
-#BratinLinks a i {
-    color: var(--GoogleRed)
-}
-
-#ayushLinks a i {
-    color: var(--GoogleBlue)
-}
-
-#AnubhavLinks a i {
-    color: var(--GoogleRed)
-}
-
-#gauravLinks a i {
-    color: var(--GoogleRed)
-}
-
-#Shivay1Links a i {
-    color: var(--GoogleYellow)
-}
-
-.icon-box:hover #BratinLinks a i,
-.icon-box:hover #gauravLinks a i,
-.icon-box:hover #ayushLinks a i,
-.icon-box:hover #AnubhavLinks a i,
-.icon-box:hover #Shivay1Links a i,
-.icon-box:hover #kautukLinks a i {
-    color: #fff
-}
-
-#ayush:hover {
-    background-color: var(--GoogleBlue);
-}
-
-#Anubhav:hover {
-    background-color: var(--GoogleRed);
-}
-
-#Shivay1:hover {
-    background-color: var(--GoogleYellow);
-}
-
-#Andrew:hover {
-    background-color: var(--GoogleGreen);
-}
-
-#Andrew:hover #AndrewLinks a i {
-    color: white;
-}
-
-#AndrewLinks a i {
-    color: var(--GoogleGreen);
-}
-
-#MargiLinks a i {
-    color: var(--GoogleRed)
-}
-
-.icon-box:hover #MargiLinks a i {
-    color: #fff
-}
-
-#HetLinks a i {
-    color: var(--GoogleYellow)
-}
-
-.icon-box:hover #HetLinks a i {
-    color: #fff
-}
-
-#ShivayLinks a i {
-    color: var(--GoogleRed)
-}
-
-.icon-box:hover #ShivayLinks a i {
-    color: #fff
-}
-
-#JayLinks a i {
-    color: var(--GoogleBlue)
-}
-
-.icon-box:hover #JayLinks a i {
-    color: #fff
-}
-
-#ManavLinks a i {
-    color: var(--GoogleRed)
-}
-
-#HellyLinks a i {
-    color: var(--GoogleGreen)
-}
-
-.icon-box:hover #HellyLinks a i {
-    color: #fff
-}
-
-.icon-box:hover #ManavLinks a i {
-    color: #fff
-}
-
-#SahilLinks a i {
-    color: var(--GoogleYellow)
-}
-
-.icon-box:hover #SahilLinks a i {
-    color: #fff
-}
-
-#Tirthak:hover {
-    background-color: var(--GoogleBlue)
-}
-
-#Sidd:hover {
-    background-color: var(--GoogleYellow)
-}
-
-#Bratin:hover {
-    background-color: var(--GoogleGreen)
-}
-
-#Margi:hover {
-    background-color: var(--GoogleYellow)
-}
-
-#Het:hover {
-    background-color: var(--GoogleRed)
-}
-
-#Shivay:hover {
-    background-color: var(--GoogleRed)
-}
-
-#Jay:hover {
-    background-color: var(--GoogleBlue)
-}
-
-#Manav:hover {
-    background-color: var(--GoogleRed)
-}
-
-#Helly:hover {
-    background-color: var(--GoogleGreen)
-}
-
-#Tushar:hover {
-    background-color: var(--GoogleBlue);
-}
-
-#Tushar div a i {
-    color: var(--GoogleBlue);
-}
-
-#Tushar:hover div a i {
-    color: white;
-}
-
-#ShivayTeam:hover {
-    background-color: var(--GoogleGreen);
-}
-
-#ShivayTeam div a i {
-    color: var(--GoogleGreen);
-}
-
-#ShivayTeam:hover div a i {
-    color: white;
-}
-
-#Sahil:hover {
-    background-color: var(--GoogleYellow)
-}
-
 .progress-container {
     position: fixed;
     top: 0;
@@ -2211,6 +2003,24 @@ section {
 
 
 /* Green Card */
+
+.GreenCard,
+.GreenCircle,
+.GreenCard .Profile-Social-links a i,
+.YellowCard,
+.YellowCircle,
+.YellowCard .Profile-Social-links a i,
+.BlueCard,
+.BlueCircle,
+.BlueCard .Profile-Social-links a i,
+.RedCard .Profile-Social-links a i,
+.RedCircle,
+.RedCard {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
 
 .GreenCard:hover {
     background-color: var(--GoogleGreen);
