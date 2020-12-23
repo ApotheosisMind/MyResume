@@ -36,6 +36,13 @@ body {
     user-select: none;
 }
 
+* {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
 *:active,
 *:focus,
 *:hover {
@@ -2134,4 +2141,93 @@ section {
     #ToggleFullScreen {
         right: 25px;
     }
+}
+
+.BlueCard:hover {
+    background-color: var(--GoogleBlue);
+}
+
+.BlueCard:hover .Profile-Social-links a i {
+    color: white;
+}
+
+.BlueCard .Profile-Social-links a i {
+    color: var(--GoogleBlue);
+}
+
+.BlueCircle {
+    fill: var(--GoogleBlue)!important;
+}
+
+.BlueCard:hover .BlueCircle {
+    fill: rgb(250, 250, 250)!important;
+}
+
+
+/* Red Card */
+
+.RedCard:hover {
+    background-color: var(--GoogleRed);
+}
+
+.RedCard:hover .Profile-Social-links a i {
+    color: white;
+}
+
+.RedCard .Profile-Social-links a i {
+    color: var(--GoogleRed);
+}
+
+.RedCircle {
+    fill: var(--GoogleRed)!important;
+}
+
+.RedCard:hover .RedCircle {
+    fill: rgb(250, 250, 250)!important;
+}
+
+
+/* Yellow Card */
+
+.YellowCard:hover {
+    background-color: var(--GoogleYellow);
+}
+
+.YellowCard:hover .Profile-Social-links a i {
+    color: white;
+}
+
+.YellowCard .Profile-Social-links a i {
+    color: var(--GoogleYellow);
+}
+
+.YellowCircle {
+    fill: var(--GoogleYellow)!important;
+}
+
+.YellowCard:hover .YellowCircle {
+    fill: rgb(250, 250, 250)!important;
+}
+
+
+/* Green Card */
+
+.GreenCard:hover {
+    background-color: var(--GoogleGreen);
+}
+
+.GreenCard:hover .Profile-Social-links a i {
+    color: white;
+}
+
+.GreenCard .Profile-Social-links a i {
+    color: var(--GoogleGreen);
+}
+
+.GreenCircle {
+    fill: var(--GoogleGreen)!important;
+}
+
+.GreenCard:hover .GreenCircle {
+    fill: rgb(250, 250, 250)!important;
 }
