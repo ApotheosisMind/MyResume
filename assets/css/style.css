@@ -2041,3 +2041,8 @@ section {
 .GreenCard:hover .GreenCircle {
     fill: rgb(250, 250, 250)!important;
 }
+
+.card-footer {
+    border: none;
+    background-color: transparent;
+}
