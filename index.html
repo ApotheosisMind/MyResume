@@ -137,7 +137,7 @@
             <div class="row mt-5 justify-content-sm-center text-center">
                 <span class="tooltiptext" id="DiscordToolTip" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">Join Us On Discord</span>
                 <div class="col-sm-1" id="AddLeft" data-aos="zoom-in" data-aos-delay="3000" data-aos-offset="-150">
-                    <a class="HoverToolTip" id="Discord" href="https://discord.gg/k4nBdDpTqh" target="_blank" onmouseover="ChangeDiscordToolTipClor()" onmouseout="ResetDiscordToolTipClor()" style="z-index: 5;">
+                    <a id="Discord" href="https://discord.gg/k4nBdDpTqh" target="_blank" onmouseover="ChangeDiscordToolTipClor()" onmouseout="ResetDiscordToolTipClor()" style="z-index: 5;">
                         <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 414">
                             <defs>
                                 <style>
@@ -242,17 +242,17 @@
 
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
                         <div class="countdown-cont">
-                            <div class="countdown countdown-inited widthMin" data-due-date="2021/01/01">
+                            <div class="widthMin" data-due-date="2021/01/01">
                                 <div class="row">
 
                                     <div class="col-3 marginEqual">
                                         <div class="number-wrap">
-                                            <span class="number display-02">
+                                            <span class="display-02">
                                                 <b id="days">
                                                     30
                                                 </b>
                                             </span>
-                                            <span mbr-text="" class="period display-07 text-center">
+                                            <span mbr-text="" class="display-07 text-center">
                                                 Days
                                             </span>
                                         </div>
@@ -260,10 +260,10 @@
 
                                     <div class="col-3 marginEqual">
                                         <div class="number-wrap">
-                                            <span class="number display-02">
+                                            <span class="display-02">
                                                 <b id="hours">08</b>
                                             </span>
-                                            <span mbr-text="" class="period display-07 text-center">
+                                            <span mbr-text="" class="display-07 text-center">
                                                 Hours
                                             </span>
                                         </div>
@@ -271,10 +271,10 @@
 
                                     <div class="col-3 marginEqual">
                                         <div class="number-wrap">
-                                            <span class="number display-02">
+                                            <span class="display-02">
                                                 <b id="minutes">05</b>
                                             </span>
-                                            <span mbr-text="" class="period display-07 text-center">
+                                            <span mbr-text="" class="display-07 text-center">
                                                 Minutes
                                             </span>
                                         </div>
@@ -282,10 +282,10 @@
 
                                     <div class="col-3 marginEqual">
                                         <div class="number-wrap">
-                                            <span class="number display-02">
+                                            <span class="display-02">
                                                 <b id="seconds">04</b>
                                             </span>
-                                            <span mbr-text="" class="period display-07 text-center">
+                                            <span mbr-text="" class="display-07 text-center">
                                                 Seconds
                                             </span>
                                         </div>
@@ -354,7 +354,7 @@
         <!-- End About Section -->
 
         <!-- ======= Facts Section ======= -->
-        <section id="facts" class="facts">
+        <section id="facts">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -456,7 +456,7 @@
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                                                <circle class="cls-2" cx="25" cy="25" r="25" fill="#4285F4" />
+                                                <circle  cx="25" cy="25" r="25" fill="#4285F4" />
                                                 <style type="text/css">
                                                     .st0 {
                                                         fill: #FFFFFF;
@@ -496,7 +496,7 @@
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                                                <circle class="cls-2" cx="25" cy="25" r="25" fill="#EA4335" />
+                                                <circle  cx="25" cy="25" r="25" fill="#EA4335" />
                                                 <style type="text/css">
                                                     .st0 {
                                                         fill: #FFFFFF;
@@ -544,7 +544,7 @@
                                     <div class="row">
                                         <div class="col-1 align-self-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                                                <circle class="cls-2" cx="25" cy="25" r="25" fill="#FBBC04" />
+                                                <circle  cx="25" cy="25" r="25" fill="#FBBC04" />
                                                 <style type="text/css">
                                                     .st0 {
                                                         fill: #FFFFFF;
@@ -595,7 +595,7 @@
 
                             <div class="col-md-6">
                                 <div class="row padding-content">
-                                    <div class="col border-0 About-Description" id="AboutDescription">
+                                    <div class="col border-0" id="AboutDescription">
                                         <div class="col">
                                             <h5 class="text-center" id="AddHeadingHere">
                                                 The Python Week
@@ -615,7 +615,7 @@
         </section>
 
         <!-- ======= Resume Section ======= -->
-        <section id="resume" class="resume">
+        <section id="resume">
             <div class="container">
 
                 <div class="section-title">
@@ -634,7 +634,7 @@
 
 
         <!-- ======= Speakers Section ======= -->
-        <section id="speakers" class="speakers services">
+        <section id="speakers" class="services">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -647,9 +647,9 @@
                         <div class="icon-box iconbox-blue SpeakersIcon BlueCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 BlueCircle" cx="150" cy="150" r="150" />
+                                    <circle class="BlueCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/Andrew.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -659,8 +659,8 @@
                             <h4><a>Andrew Knight</a></h4>
                             <p>An engineer, consultant, and international speaker</p>
                             <div class="Profile-Social-links">
-                                <a target="_blank" class="twitter" href="https://twitter.com/AutomationPanda"><i class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/bhargav-p-patel/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a target="_blank" href="https://twitter.com/AutomationPanda"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/bhargav-p-patel/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -670,9 +670,9 @@
                         <div class="icon-box iconbox-pink RedCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 RedCircle" cx="150" cy="150" r="150" />
+                                    <circle class="RedCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/Bhargav.webp" decoding="async" loading="lazy" style="z-index: 2;" width="300"
                                         clip-path="url(#circleView)">
@@ -681,9 +681,9 @@
                             <h4><a>Bhargav Patel</a></h4>
                             <p>Researcher</p>
                             <div class="Profile-Social-links">
-                                <a href="" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/bhargav-p-patel/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/bhargav-p-patel/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -694,9 +694,9 @@
                         <div class="icon-box iconbox-pink YellowCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 YellowCircle" cx="150" cy="150" r="150" />
+                                    <circle class="YellowCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/gaurav.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -705,10 +705,10 @@
                             <h4><a>Gaurav Jain</a></h4>
                             <p>Software Engineer at Evalueserve.com</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/gaurav_jain98" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/gauravjain98/" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/gaurav_jain98" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/gauravjain98/" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -718,9 +718,9 @@
                         <div class="icon-box iconbox-pink GreenCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 GreenCircle" id="ayushBG" cx="150" cy="150" r="150" />
+                                    <circle class="GreenCircle" id="ayushBG" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/ayush.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -729,9 +729,9 @@
                             <h4><a>Ayush Thakur</a></h4>
                             <p>ML Engineer at Weights and Biases.</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/ayushthakur0" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/ayush-thakur-731914149/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/ayushthakur0" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/ayush-thakur-731914149/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -741,9 +741,9 @@
                         <div class="icon-box iconbox-pink BlueCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 BlueCircle" id="AnubhavBG" cx="150" cy="150" r="150" />
+                                    <circle class="BlueCircle" id="AnubhavBG" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/anubhav.webp" decoding="async" loading="lazy" style="z-index: 2;"
                                         height="300" clip-path="url(#circleView)">
@@ -752,10 +752,10 @@
                             <h4><a>Anubhav Singh</a></h4>
                             <p>Full Stack Developer at 1K Kirana Bazar</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/xprilion" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/xprilion" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/xprilion" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/xprilion" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -767,9 +767,9 @@
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
 
-                                    <circle class="cls-1 RedCircle" cx="150" cy="150" r="150" />
+                                    <circle class="RedCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/shivay.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -778,10 +778,10 @@
                             <h4><a>Shivay Lamba</a></h4>
                             <p>Lead Engineer at Darkhouse</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/howdevelop" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/shivaylamba" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/howdevelop" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/shivaylamba" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -792,9 +792,9 @@
                         <div class="icon-box iconbox-pink YellowCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                <circle class="cls-1 YellowCircle" cx="150" cy="150" r="150" />
+                <circle class="YellowCircle" cx="150" cy="150" r="150" />
                 <clipPath id="circleView">
-                    <circle class="cls-1" cx="150" cy="150" r="150" />
+                    <circle  cx="150" cy="150" r="150" />
                 </clipPath>
                 <image href="assets/img/bratin.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                     clip-path="url(#circleView)">
@@ -803,10 +803,10 @@
                             <h4><a>Bratin Kundu</a></h4>
                             <p>Organizer MDC</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/BratinKundu" target="_blank" class="twitter"><i
-                    class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/bratin-kundu-449954170/" target="_blank" class="linkedin"><i
-                    class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/BratinKundu" target="_blank"><i
+                    class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/bratin-kundu-449954170/" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1132,7 +1132,7 @@
 
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio section-bg">
+        <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -1148,7 +1148,7 @@
                             <div class="card">
                                 <div id="headingOne" class="card-header border-0">
                                     <h6 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="d-block position-relative collapsed text-uppercase collapsible-link
-                                    py-2 CustomBorder"><span class="Android-View">What is The Python<br>Week?</span>
+                                    py-2"><span class="Android-View">What is The Python<br>Week?</span>
                                             <span class="Standrad-View">What is The Python Week?</span><span
                                                 class="Tablet-View">What is The Python Week?</span></a>
                                     </h6>
@@ -1265,9 +1265,9 @@
                         <div class="icon-box iconbox-blue TeamIcon BlueCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 BlueCircle" id="TirthakBG" cx="150" cy="150" r="150" />
+                                    <circle class="BlueCircle" id="TirthakBG" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/tirthak-patel.webp" decoding="async" loading="lazy" style="z-index: 2;"
                                         height="300" clip-path="url(#circleView)">
@@ -1277,10 +1277,10 @@
                             <h4><a>Tirthak Patel</a></h4>
                             <p>Lead Organizer</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/tirthak_patel" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://linkedin.com/in/tirthakpatel" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/tirthak_patel" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://linkedin.com/in/tirthakpatel" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1289,9 +1289,9 @@
                         <div class="icon-box iconbox-orange TeamIcon RedCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 RedCircle" cx="150" cy="150" r="150" />
+                                    <circle class="RedCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/Siddharth.webp" decoding="async" loading="lazy" style="z-index: 2;"
                                         height="300" clip-path="url(#circleView)">
@@ -1300,9 +1300,9 @@
                             <h4><a>Siddharth Dayalwal</a></h4>
                             <p>Co-organizer</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/siddharth_hacks/" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/siddharth-dayalwal/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/siddharth_hacks/" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/siddharth-dayalwal/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1311,9 +1311,9 @@
                         <div class="icon-box iconbox-pink TeamIcon YellowCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 YellowCircle" cx="150" cy="150" r="150" />
+                                    <circle class="YellowCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/bratin.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1322,9 +1322,9 @@
                             <h4><a>Bratin Kundu</a></h4>
                             <p>Co-organizer</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/BratinKundu" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/bratin-kundu-449954170/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/BratinKundu" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/bratin-kundu-449954170/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1335,9 +1335,9 @@
                         <div class="icon-box TeamIcon GreenCard" id="Het" style="margin-top: -5px;">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 GreenCircle" id="hetBG" cx="150" cy="150" r="150" />
+                                    <circle class="GreenCircle" id="hetBG" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/het-suthar.webp" decoding="async" loading="lazy" style="z-index: 2;"
                                         height="300" clip-path="url(#circleView)">
@@ -1346,9 +1346,9 @@
                             <h4><a>Het Suthar</a></h4>
                             <p>Logistics Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/HetSuthar7" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/het-suthar-79639a179/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/HetSuthar7" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/het-suthar-79639a179/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1357,9 +1357,9 @@
                         <div class="icon-box iconbox-yellow TeamIcon BlueCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 BlueCircle" cx="150" cy="150" r="150" />
+                                    <circle class="BlueCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/margi.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1368,10 +1368,10 @@
                             <h4><a>Margi Patel</a></h4>
                             <p>Marketing Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/margipatel22" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://linkedin.com/in/margipatel22" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/margipatel22" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://linkedin.com/in/margipatel22" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1380,9 +1380,9 @@
                         <div class="icon-box TeamIcon RedCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 RedCircle" cx="150" cy="150" r="150" />
+                                    <circle class="RedCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/sahil.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1393,9 +1393,9 @@
                             </h4>
                             <p>Operation Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/S_kbhatiya" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa"></i></a>
-                                <a href="https://www.linkedin.com/in/sahil-bhatiya-73790719a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/S_kbhatiya" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/sahil-bhatiya-73790719a/" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1405,9 +1405,9 @@
                         <div class="icon-box iconbox-teal TeamIcon YellowCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 YellowCircle" cx="150" cy="150" r="150" />
+                                    <circle class="YellowCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/jay.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1416,10 +1416,10 @@
                             <h4><a>Jay Patel</a></h4>
                             <p>Technical Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/imjp19_" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/imjp19" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/imjp19_" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/imjp19" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1429,9 +1429,9 @@
                         <div class="icon-box iconbox-teal TeamIcon GreenCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 GreenCircle" cx="150" cy="150" r="150" />
+                                    <circle class="GreenCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/Helly.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1440,9 +1440,9 @@
                             <h4><a>Helly Hirpara</a></h4>
                             <p>Community Lead</p>
                             <div class="Profile-Social-links">
-                                <a target="_blank" class="twitter"><i class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/hellyhirpara/" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a target="_blank"><i class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/hellyhirpara/" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1452,9 +1452,9 @@
                         <div class="icon-box iconbox-teal TeamIcon BlueCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 BlueCircle" cx="150" cy="150" r="150" />
+                                    <circle class="BlueCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/Tushar.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1463,10 +1463,10 @@
                             <h4><a>Tushar</a></h4>
                             <p>Marketing Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/Tusharakhil" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/tushar-ba401a136/" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/Tusharakhil" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/tushar-ba401a136/" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1475,9 +1475,9 @@
                         <div class="icon-box iconbox-teal TeamIcon RedCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 RedCircle" cx="150" cy="150" r="150" />
+                                    <circle class="RedCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/shivay.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1486,10 +1486,10 @@
                             <h4><a>Shivay Lamba</a></h4>
                             <p>External Relations</p>
                             <div class="Profile-Social-links">
-                                <a href="https://twitter.com/howdevelop" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://linkedin.com/in/shivaylamba" target="_blank" class="linkedin"><i
-                                        class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://twitter.com/howdevelop" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://linkedin.com/in/shivaylamba" target="_blank"><i
+                                        class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1498,9 +1498,9 @@
                         <div class="icon-box iconbox-teal TeamIcon YellowCard">
                             <div class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 300 300">
-                                    <circle class="cls-1 YellowCircle" cx="150" cy="150" r="150" />
+                                    <circle class="YellowCircle" cx="150" cy="150" r="150" />
                                     <clipPath id="circleView">
-                                        <circle class="cls-1" cx="150" cy="150" r="150" />
+                                        <circle  cx="150" cy="150" r="150" />
                                     </clipPath>
                                     <image href="assets/img/manav.webp" decoding="async" loading="lazy" style="z-index: 2;" height="300"
                                         clip-path="url(#circleView)">
@@ -1509,9 +1509,9 @@
                             <h4><a>Manav Shah</a></h4>
                             <p>Graphics Lead</p>
                             <div class="Profile-Social-links">
-                                <a href="https://www.twitter.com/ManavUdaykumar" target="_blank" class="twitter"><i
-                                        class="bx bxl-twitter fa-2x"></i></a>
-                                <a href="https://www.linkedin.com/in/manav-shah-881162179" target="_blank" class="linkedin"><i class="bx bxl-linkedin fa-2x"></i></a>
+                                <a href="https://www.twitter.com/ManavUdaykumar" target="_blank"><i
+                                        class="bx bxl-twitter"></i></a>
+                                <a href="https://www.linkedin.com/in/manav-shah-881162179" target="_blank"><i class="bx bxl-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1535,7 +1535,7 @@
                 </div>
 
                 <div class="row mt-1">
-                    <div class="col-lg-6 mt-5 mt-lg-0 ContactForm" style="margin-left: auto; margin-right: auto;">
+                    <div class="col-lg-6 mt-5 mt-lg-0" style="margin-left: auto; margin-right: auto;">
 
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="form-row">
@@ -1592,14 +1592,13 @@
                 </div>
             </div>
             <div class="social-links">
-                <a href="https://twitter.com/Mehdevclub" target="_blank" class="twitter"><i
+                <a href="https://twitter.com/Mehdevclub" target="_blank"><i
                         class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/MehDevClub" target="_blank" class="facebook"><i
+                <a href="https://www.facebook.com/MehDevClub" target="_blank"><i
                         class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/meh_devs_club/" target="_blank" class="instagram"><i
+                <a href="https://www.instagram.com/meh_devs_club/" target="_blank"><i
                         class="bx bxl-instagram"></i></a>
-                <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
-                <a href="https://www.linkedin.com/company/mehdevclub/" target="_blank" class="linkedin"><i
+                <a href="https://www.linkedin.com/company/mehdevclub/" target="_blank"><i
                         class="bx bxl-linkedin"></i></a>
             </div>
             <div class="copyright">
@@ -1738,8 +1737,7 @@
         gtag('config', 'G-EB0LL9VJD6');
     </script>
 
-    <!-- <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script> -->
-    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js" decoding="async"></script>
 
 </body>
 
