@@ -228,130 +228,6 @@
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title" id="comingSoonChange">
-                    <h2>Coming Soon</h2>
-                    <p>We are coming up with amazing unique stuff during our event, be sure to register & enjoy the celebration
-                    </p>
-                </div>
-
-
-                <div class="row">
-
-                    <div class="col-lg-8 pt-4 pt-lg-0 content">
-                        <div class="countdown-cont">
-                            <div class="widthMin">
-                                <div class="row">
-
-                                    <div class="col-3 marginEqual">
-                                        <div class="number-wrap">
-                                            <span class="display-02">
-                                                <b>
-                                                    00
-                                                </b>
-                                            </span>
-                                            <span class="display-07 text-center">
-                                                Days
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-3 marginEqual">
-                                        <div class="number-wrap">
-                                            <span class="display-02">
-                                                <b >00</b>
-                                            </span>
-                                            <span class="display-07 text-center">
-                                                Hours
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-3 marginEqual">
-                                        <div class="number-wrap">
-                                            <span class="display-02">
-                                                <b>00</b>
-                                            </span>
-                                            <span class="display-07 text-center">
-                                                Minutes
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-3 marginEqual">
-                                        <div class="number-wrap">
-                                            <span class="display-02">
-                                                <b >00</b>
-                                            </span>
-                                            <span class="display-07 text-center">
-                                                Seconds
-                                            </span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-lg-8 newsletter-text">
-                                <h3>Subscribe to our mailing list</h3>
-                                <p>Subscribe to find out when we open the registrations</p>
-                            </div>
-                            <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-0" style="padding: 0px;">
-                                <form class="newsletter-form" method="POST" autocomplete="off" name="google-sheet">
-                                    <input type="email" placeholder="Enter your email" required name="email">
-                                    <button type="submit">Subscribe</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <script>
-                        function countdown() {
-                            var now = new Date();
-                            var eventDate = new Date(2021, 0, 1);
-
-                            var currentTiime = now.getTime();
-                            var eventTime = eventDate.getTime();
-
-                            var remTime = eventTime - currentTiime;
-
-                            var s = Math.floor(remTime / 1000);
-                            var m = Math.floor(s / 60);
-                            var h = Math.floor(m / 60);
-                            var d = Math.floor(h / 24);
-
-                            h %= 24;
-                            m %= 60;
-                            s %= 60;
-
-                            h = (h < 10) ? "0" + h : h;
-                            m = (m < 10) ? "0" + m : m;
-                            s = (s < 10) ? "0" + s : s;
-
-                            document.getElementById("days").textContent = d;
-
-                            document.getElementById("hours").textContent = h;
-                            document.getElementById("minutes").textContent = m;
-                            document.getElementById("seconds").textContent = s;
-
-                            setTimeout(countdown, 1000);
-                        }
-                        countdown();
-                    </script>
-
-                    <div class="col-lg-4">
-                        <img src="assets/img/2021.svg" loading="lazy" class="img-fluid" decoding="async" alt="">
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- End About Section -->
 
         <!-- ======= Facts Section ======= -->
         <section id="facts">
@@ -1149,12 +1025,13 @@
 
 
                     <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                        <a href="https://gdg.community.dev/gdg-ahmedabad/">
+                        <a href="https://gdg.community.dev/gdg-Baroda/">
                             <div class="icon-sponsers">
-                                <img src="Svg/GDGAHM.svg" decoding="async" loading="lazy" style="z-index: 2;">
+                                <img src="Svg/GDGBaroda.svg" decoding="async" loading="lazy" style="z-index: 2;">
                             </div>
                         </a>
                     </div>
+
 
                     <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <a href="https://twitter.com/DscNuv?s=09">
@@ -1182,6 +1059,30 @@
                         </a>
                     </div>
 
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="https://gdg.community.dev/gdg-cloud-kolkata/">
+                            <div class="icon-sponsers">
+                                <img src="Svg/GDGCloubKol.svg" decoding="async" loading="lazy" style="z-index: 2;">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="https://gdg.community.dev/gdg-kolkata/">
+                            <div class="icon-sponsers">
+                                <img src="Svg/GDGKolkata.svg" decoding="async" loading="lazy" style="z-index: 2;">
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <a href="https://gdg.community.dev/gdg-ahmedabad/">
+                            <div class="icon-sponsers">
+                                <img src="Svg/GDGAHM.svg" decoding="async" loading="lazy" style="z-index: 2;">
+                            </div>
+                        </a>
+                    </div>
 
 
                 </div>
